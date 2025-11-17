@@ -4,8 +4,12 @@ A comprehensive collection of tools, resources, and tutorials for conducting sys
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+> **💡 New to Systematic Literature Reviews?** Start with the [Quick Start Guide](#-quick-start-guide) below!
+
 ## Table of Contents
 
+- [🚀 Quick Start Guide](#-quick-start-guide)
+- [📊 Recommended Workflow](#-recommended-workflow)
 - [What is Systematic Literature Review?](#what-is-systematic-literature-review)
 - [Key Journals & Publications](#key-journals--publications)
 - [Planning & Protocol](#planning--protocol)
@@ -23,6 +27,66 @@ A comprehensive collection of tools, resources, and tutorials for conducting sys
 - [Open Source Tools & GitHub Repositories](#open-source-tools--github-repositories)
 - [Datasets & Benchmarks](#datasets--benchmarks)
 - [Learning Resources](#learning-resources)
+- [⚠️ Common Challenges & How to Avoid Them](#%EF%B8%8F-common-challenges--how-to-avoid-them)
+- [📝 Practical Examples & Templates](#-practical-examples--templates)
+- [❓ FAQ for Young Researchers](#-faq-for-young-researchers)
+
+---
+
+## 🚀 Quick Start Guide
+
+**Choose your path based on your needs:**
+
+### For Beginners (Just Starting)
+1. **Learn the basics**: Read [Systematic Literature Review: Easy Guide](https://www.languageonthemove.com/systematic-literature-review-easy-guide/)
+2. **Follow standards**: Download [PRISMA 2020 Checklist](https://www.prisma-statement.org/)
+3. **Start simple**: Use [Rayyan](https://www.rayyan.ai/) (free) or [Covidence](https://www.covidence.org/) (free trial)
+4. **Manage references**: Install [Zotero](https://www.zotero.org/) (free, open-source)
+
+### For Developers/Programmers
+1. **Install Python tools**: `pip install asreview litstudy`
+2. **Install R packages**: `install.packages(c("metafor", "bibliometrix", "PRISMA2020"))`
+3. **Explore GitHub**: Browse [systematic-review topic](https://github.com/topics/systematic-review)
+4. **Try notebooks**: Use [Jupyter Guide](https://github.com/jupyter-guide/jupyter-guide)
+
+### For Health/Medical Researchers
+1. **Search**: [PubMed](https://pubmed.ncbi.nlm.nih.gov/) + [Cochrane Library](https://www.cochranelibrary.com/)
+2. **Screen**: [ASReview](https://asreview.nl/) or [Rayyan](https://www.rayyan.ai/)
+3. **Quality**: [Cochrane RoB 2 Tool](https://www.riskofbias.info/)
+4. **Analyze**: [RevMan](https://revman.cochrane.org/) (free Cochrane tool)
+
+### For Engineering/CS Researchers
+1. **Search**: [IEEE Xplore](https://ieeexplore.ieee.org/) + [ACM DL](https://dl.acm.org/) + [Scopus](https://www.scopus.com/)
+2. **Visualize**: [VOSviewer](https://www.vosviewer.com/) for citation networks
+3. **AI Help**: [Elicit](https://elicit.com/) or [Consensus](https://consensus.app/)
+4. **Publish in**: [IEEE COMST](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9739) or [ACM CSUR](https://dl.acm.org/journal/csur)
+
+---
+
+## 📊 Recommended Workflow
+
+**Step-by-step process with tool recommendations:**
+
+| Phase | What to Do | Free Tools | Paid Tools |
+|-------|------------|------------|------------|
+| **1. Planning** | Define question (PICO), write protocol | [PRISMA-P](https://www.prisma-statement.org/protocols), [PROSPERO](https://www.crd.york.ac.uk/prospero/) | - |
+| **2. Search** | Search multiple databases | [PubMed](https://pubmed.ncbi.nlm.nih.gov/), [Google Scholar](https://scholar.google.com/), [Semantic Scholar](https://www.semanticscholar.org/) | [Scopus](https://www.scopus.com/), [Web of Science](https://www.webofscience.com/) |
+| **3. Deduplication** | Remove duplicate records | [ASySD](https://camarades.shinyapps.io/ASySD/), [Zotero](https://www.zotero.org/) | [EndNote](https://endnote.com/), [Covidence](https://www.covidence.org/) |
+| **4. Screening** | Title/abstract screening | [ASReview](https://asreview.nl/), [Rayyan](https://www.rayyan.ai/) | [Covidence](https://www.covidence.org/), [DistillerSR](https://www.distillersr.com/) |
+| **5. Full-text Review** | Read and select studies | [Rayyan](https://www.rayyan.ai/), [Zotero](https://www.zotero.org/) | [Covidence](https://www.covidence.org/) |
+| **6. Data Extraction** | Extract study data | [Covidence](https://www.covidence.org/) (trial), Google Sheets | [DistillerSR](https://www.distillersr.com/), [NVivo](https://www.qsrinternational.com/) |
+| **7. Quality Assessment** | Assess risk of bias | [JBI Tools](https://jbi.global/critical-appraisal-tools), [RoB 2](https://www.riskofbias.info/) | - |
+| **8. Analysis** | Meta-analysis/synthesis | [RevMan](https://revman.cochrane.org/), [R metafor](https://www.metafor-project.org/) | [Comprehensive Meta-Analysis](https://www.meta-analysis.com/) |
+| **9. Visualization** | Create figures | [PRISMA2020 R package](https://github.com/prisma-flowdiagram/PRISMA2020), [VOSviewer](https://www.vosviewer.com/) | [Tableau](https://www.tableau.com/) |
+| **10. Writing** | Write manuscript | [Overleaf](https://www.overleaf.com/), [Google Docs](https://docs.google.com/) | [Microsoft Word](https://www.microsoft.com/microsoft-365/word) |
+
+**💰 Budget-Friendly Full Workflow:**
+- All steps: **Rayyan + Zotero + RevMan + R (metafor) + Overleaf** = $0
+- Everything is free and open-source!
+
+**🚀 Premium Workflow:**
+- All steps: **Covidence + EndNote + Comprehensive Meta-Analysis + NVivo** ≈ $500-1500/year
+- Professional features, support, and integrations
 
 ---
 
@@ -132,6 +196,8 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 
 ## Study Management
 
+> **🎯 Quick Pick:** Free users → [Rayyan](https://www.rayyan.ai/) | Budget available → [Covidence](https://www.covidence.org/)
+
 ### Comprehensive Platforms:
 
 1. **[Covidence](https://www.covidence.org/)** ⭐ Recommended
@@ -162,6 +228,15 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 ---
 
 ## Screening & Selection
+
+> **🎯 Quick Comparison:**
+>
+> | Tool | Cost | Best Feature | Workload Reduction |
+> |------|------|--------------|-------------------|
+> | [ASReview](https://asreview.nl/) | Free | AI active learning | Up to 95% |
+> | [Rayyan](https://www.rayyan.ai/) | Free | Collaborative screening | Good |
+> | [Abstrackr](http://abstrackr.cebm.brown.edu/) | Free | Semi-automated | ~67% |
+> | [Covidence](https://www.covidence.org/) | Paid | Full workflow | Good |
 
 ### AI-Powered Screening Tools:
 
@@ -250,6 +325,8 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 ---
 
 ## Analysis & Synthesis
+
+> **🎯 Quick Pick:** Free → [RevMan](https://revman.cochrane.org/) or [R metafor](https://www.metafor-project.org/) | Easy to use → [CMA](https://www.meta-analysis.com/) ($295/year)
 
 ### Meta-Analysis Software:
 
@@ -351,6 +428,8 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 
 ## Reference Management
 
+> **🎯 Quick Pick:** Most users → [Zotero](https://www.zotero.org/) (free) | Large SLRs (5000+ refs) → [EndNote](https://endnote.com/)
+
 ### Top Reference Managers:
 
 1. **[Zotero](https://www.zotero.org/)** ⭐ Free & Open Source
@@ -410,6 +489,8 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 
 ## AI-Powered Tools
 
+> **🎯 Quick Pick:** Start with [Elicit](https://elicit.com/) + [ResearchRabbit](https://www.researchrabbit.ai/) (both have free tiers)
+
 ### AI Research Assistants:
 
 1. **[Elicit](https://elicit.com/)** ⭐ Highly Recommended
@@ -452,6 +533,11 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 ---
 
 ## Open Source Tools & GitHub Repositories
+
+> **🎯 Quick Picks:**
+> **Python:** `pip install asreview litstudy` → Screening + Analysis
+> **R:** `install.packages(c("metafor", "bibliometrix"))` → Meta-analysis + Bibliometrics
+> **PDF Extraction:** [GROBID](https://github.com/kermitt2/grobid) (3500+ stars)
 
 This section highlights open-source tools and code repositories that you can use, modify, and contribute to. Perfect for developers and researchers who want programmatic access or customizable solutions.
 
@@ -754,6 +840,464 @@ Many of these tools welcome contributions:
 - **[r/AskAcademia](https://www.reddit.com/r/AskAcademia/)**
 - **[ResearchGate](https://www.researchgate.net/)** - Q&A on systematic reviews
 - **[Zotero Forums](https://forums.zotero.org/)**
+
+---
+
+## ⚠️ Common Challenges & How to Avoid Them
+
+Based on experienced researchers' insights, here are the most common pitfalls and how to avoid them:
+
+### 1. Poor Search Strategy
+
+**❌ Mistake:** Search too narrow (miss relevant papers) or too broad (overwhelmed with irrelevant results)
+
+**✅ Solution:**
+- Use PICO/PICOT frameworks to structure your question
+- Combine synonyms with OR: `(machine learning OR deep learning OR neural network*)`
+- Combine concepts with AND: `(machine learning) AND (healthcare) AND (diagnosis)`
+- Test search strings on pilot searches (should find known key papers)
+- Document all search strings and dates for reproducibility
+
+**Example Search String:**
+```
+("systematic review" OR "literature review" OR "meta-analysis")
+AND
+("machine learning" OR "deep learning" OR "artificial intelligence" OR AI)
+AND
+(healthcare OR medical OR clinical)
+```
+
+### 2. Inadequate Protocol Planning
+
+**❌ Mistake:** Starting without a clear protocol, leading to scope creep and inconsistent decisions
+
+**✅ Solution:**
+- Write protocol BEFORE searching (use PRISMA-P checklist)
+- Register protocol on [PROSPERO](https://www.crd.york.ac.uk/prospero/) for transparency
+- Define clear inclusion/exclusion criteria upfront
+- Pre-specify all outcomes and analysis plans
+- Get protocol peer-reviewed by colleagues
+
+### 3. Poor Inter-Rater Reliability
+
+**❌ Mistake:** Reviewers disagree on study selection, leading to bias
+
+**✅ Solution:**
+- Use at least 2 independent reviewers for screening
+- Pilot screening on 50-100 abstracts to calibrate
+- Measure agreement (Cohen's Kappa ≥ 0.6 is acceptable)
+- Have clear decision rules for conflicts
+- Use tools like [Rayyan](https://www.rayyan.ai/) or [Covidence](https://www.covidence.org/) for blind screening
+
+### 4. Data Extraction Errors
+
+**❌ Mistake:** Inconsistent or incorrect data extraction, transposition errors
+
+**✅ Solution:**
+- Create standardized extraction forms (pilot test on 5-10 papers)
+- Use double data extraction (2 reviewers extract independently)
+- Cross-check numerical data carefully
+- Use tools: [Covidence](https://www.covidence.org/), [DistillerSR](https://www.distillersr.com/), or structured spreadsheets
+- Keep extraction audit trail
+
+### 5. Inadequate Documentation
+
+**❌ Mistake:** Can't reproduce the review or explain decisions months later
+
+**✅ Solution:**
+- Document everything: search dates, databases, filters used
+- Keep decision logs (why studies were excluded)
+- Save all search results and versions
+- Use version control (GitHub) for protocol and data
+- Follow PRISMA 2020 reporting guidelines
+
+### 6. Ignoring Grey Literature
+
+**❌ Mistake:** Only searching academic databases, missing important studies
+
+**✅ Solution:**
+- Search conference proceedings, dissertations, preprints
+- Check clinical trial registries (ClinicalTrials.gov)
+- Contact key authors for unpublished work
+- Search: Google Scholar, OpenGrey, ProQuest Dissertations
+
+### 7. Poor Time Management
+
+**❌ Mistake:** Underestimating time required (SLRs typically take 6-18 months!)
+
+**✅ Solution:**
+- Realistic timeline: Planning (1-2 months) → Searching (1 month) → Screening (2-4 months) → Extraction (2-3 months) → Analysis (1-2 months) → Writing (2-3 months)
+- Use project management tools: [Notion](https://www.notion.so/), [Trello](https://trello.com/), or [OSF](https://osf.io/)
+- Set weekly goals and track progress
+- Build in buffer time for unexpected issues
+
+### 8. Tool Overwhelm
+
+**❌ Mistake:** Trying to learn too many tools at once
+
+**✅ Solution:**
+- Start with simple, free tools: [Rayyan](https://www.rayyan.ai/) + [Zotero](https://www.zotero.org/)
+- Add complexity only when needed
+- Use our [Quick Start Guide](#-quick-start-guide) based on your role
+- Stick to one tool per task (don't switch mid-review)
+
+### 9. Poor Quality Assessment
+
+**❌ Mistake:** Skipping quality assessment or using wrong tools
+
+**✅ Solution:**
+- Choose appropriate tool for study type:
+  - RCTs: [Cochrane RoB 2](https://www.riskofbias.info/)
+  - Non-RCTs: [ROBINS-I](https://www.riskofbias.info/welcome/robins-i-tool)
+  - Multiple designs: [JBI Tools](https://jbi.global/critical-appraisal-tools)
+- Have 2 independent assessors
+- Report quality scores in results
+- Consider sensitivity analysis (excluding low-quality studies)
+
+### 10. Publication Bias
+
+**❌ Mistake:** Only including published studies (positive results bias)
+
+**✅ Solution:**
+- Search trial registries for unpublished trials
+- Use funnel plots to detect publication bias
+- Contact authors for unpublished data
+- Report potential limitations in discussion
+
+---
+
+## 📝 Practical Examples & Templates
+
+### Search String Examples
+
+#### Example 1: Machine Learning in Healthcare
+```
+Title/Abstract/Keywords:
+("machine learning" OR "deep learning" OR "neural network*" OR "artificial intelligence" OR AI)
+AND
+(diagnos* OR predict* OR classif* OR detect*)
+AND
+(medical OR clinical OR healthcare OR patient*)
+
+Filters: English, 2015-2024, Peer-reviewed
+```
+
+#### Example 2: Software Engineering Education
+```
+("software engineering" OR "computer science" OR "programming")
+AND
+(education* OR teaching OR learning OR pedagog* OR curriculum)
+AND
+("systematic review" OR "literature review" OR survey OR "state of the art")
+```
+
+#### Example 3: Climate Change Adaptation
+```
+("climate change" OR "global warming" OR "climate crisis")
+AND
+(adapt* OR resilien* OR mitigation)
+AND
+(urban OR cit* OR "built environment")
+AND
+(policy OR policies OR governance OR planning)
+```
+
+### PICO/PICOT Framework Examples
+
+#### Example: Clinical Question
+- **P**opulation: Adults with Type 2 diabetes
+- **I**ntervention: Continuous glucose monitoring
+- **C**omparison: Standard blood glucose monitoring
+- **O**utcome: HbA1c levels, hypoglycemic events
+- **T**ime: At least 6 months follow-up
+
+#### Example: Technology Question (PICO adaptation)
+- **P**roblem: Software bug prediction
+- **I**ntervention: Machine learning approaches
+- **C**omparison: Traditional static analysis
+- **O**utcome: Precision, recall, F1-score
+
+### Downloadable Protocol Templates
+
+1. **[PRISMA-P Template (Word)](https://www.prisma-statement.org/protocols)**
+   - Official PRISMA protocol checklist
+   - 17-item checklist
+   - Free to use
+
+2. **[Covidence Protocol Guide (PDF)](https://www.covidence.org/wp-content/uploads/2024/10/A_practical_guide_Protocol_Development_for_Systematic_Reviews.pdf)**
+   - Practical guide with examples
+   - Templates included
+   - Real-world case studies
+
+3. **[OSF Protocol Template](https://osf.io/jd4k2/)**
+   - Preregistration template
+   - For systematic reviews, scoping reviews, meta-analyses
+   - Open access under CC license
+
+4. **[York CRD Template (PDF)](https://www.crd.york.ac.uk/PROSPEROFILES/3611_STRATEGY_20130031.pdf)**
+   - Systematic review protocol outline
+   - Structured format
+   - Widely used in health sciences
+
+### Inclusion/Exclusion Criteria Examples
+
+#### Example 1: Quantitative Studies
+**Inclusion:**
+- Peer-reviewed journal articles
+- Published 2015-2024
+- Randomized controlled trials (RCTs)
+- Adults aged 18-65
+- Intervention duration ≥ 12 weeks
+- Reported outcomes: quantitative measures with statistics
+
+**Exclusion:**
+- Conference abstracts, posters
+- Non-English language
+- Animal studies
+- Case reports, editorials, reviews
+- Duplicate publications
+- No full text available
+
+#### Example 2: Mixed Methods
+**Inclusion:**
+- Empirical studies (qualitative, quantitative, mixed)
+- Focus on software engineering practices
+- Published in ACM, IEEE, or top-tier SE venues
+- Full research papers (≥ 8 pages)
+
+**Exclusion:**
+- Opinion pieces, position papers
+- Tool demos without evaluation
+- Studies with <10 participants (qualitative)
+- Pre-2010 (outdated technology)
+
+### Data Extraction Form Template
+
+| Field | Example Value | Notes |
+|-------|---------------|-------|
+| **Study ID** | Smith2024 | FirstAuthorYear |
+| **Title** | ML for Medical Diagnosis | |
+| **Authors** | Smith, J., Doe, A. | |
+| **Year** | 2024 | |
+| **Journal** | Nature Medicine | |
+| **Study Design** | RCT | RCT/Cohort/Case-Control |
+| **Sample Size** | n=500 | |
+| **Population** | Type 2 Diabetes patients | |
+| **Intervention** | CNN-based diagnosis | |
+| **Comparison** | Traditional diagnosis | |
+| **Outcome Measures** | Accuracy, Sensitivity, Specificity | |
+| **Main Results** | Acc: 95%, Sens: 92%, Spec: 97% | |
+| **Quality Score** | 8/10 (Cochrane RoB) | Low/Moderate/High |
+| **Notes** | Large sample, well-designed | |
+
+### PRISMA Flow Diagram Template
+
+You can generate this automatically with:
+- **R**: [PRISMA2020 package](https://github.com/prisma-flowdiagram/PRISMA2020) ✅ Free
+- **Web App**: [PRISMA Flow Diagram Generator](http://prisma.thetacollaborative.ca/) ✅ Free
+- **Shiny App**: [prisma.shinyapps.io/checklist](https://prisma.shinyapps.io/checklist/) ✅ Free
+
+---
+
+## ❓ FAQ for Young Researchers
+
+### Getting Started
+
+**Q: How long does a systematic review take?**
+A: Typically 6-18 months depending on scope. Budget realistic time:
+- Small review (50-200 papers): 6-9 months
+- Medium review (200-500 papers): 9-12 months
+- Large review (500+ papers): 12-18 months
+
+**Q: Can I do a systematic review alone?**
+A: Not recommended! You need at least 2 reviewers for:
+- Independent screening (reduce bias)
+- Data extraction validation
+- Quality assessment
+- Conflict resolution
+However, you can be the lead with 1-2 collaborators.
+
+**Q: Do I need to register my protocol?**
+A: Strongly recommended (required for some journals):
+- Health sciences: [PROSPERO](https://www.crd.york.ac.uk/prospero/) (required)
+- Other fields: [OSF Registries](https://osf.io/registries) (recommended)
+- Prevents duplication and selective reporting
+
+**Q: How many databases should I search?**
+A: Minimum 3-4 major databases for your field:
+- Health: PubMed + Cochrane + Embase + Scopus
+- Engineering/CS: IEEE Xplore + ACM + Scopus + Web of Science
+- Social Sciences: PsycINFO + ERIC + Scopus + Web of Science
+
+### Search Strategy
+
+**Q: How do I know if my search string is good?**
+A: Test it:
+1. Should find 3-5 known key papers (seed papers)
+2. Precision > 5% (not too broad)
+3. Recall > 90% (not too narrow)
+4. Validated by a librarian or search expert
+
+**Q: Should I use MeSH terms or free text?**
+A: BOTH! Use controlled vocabulary (MeSH, EMTREE) AND free text synonyms:
+```
+MeSH Terms: "Diabetes Mellitus, Type 2"[Mesh]
+OR
+Free Text: (diabetes OR diabetic*) AND (type 2 OR type II OR T2DM)
+```
+
+**Q: What if I get 10,000+ results?**
+A: Refine your search:
+1. Add more specific AND terms
+2. Limit date range
+3. Add publication type filters
+4. Consult with search expert
+5. Use AI tools like [ASReview](https://asreview.nl/) for efficient screening
+
+### Tools & Software
+
+**Q: What's the best free tool for beginners?**
+A: Start with:
+1. **Screening**: [Rayyan](https://www.rayyan.ai/) (free, unlimited collaborators)
+2. **References**: [Zotero](https://www.zotero.org/) (free, open-source)
+3. **Analysis**: [RevMan](https://revman.cochrane.org/) (free, from Cochrane)
+4. **Writing**: [Overleaf](https://www.overleaf.com/) (free tier for LaTeX)
+
+**Q: Is Excel okay for data extraction?**
+A: Yes, for small reviews (<50 studies). For larger reviews:
+- Use dedicated tools: [Covidence](https://www.covidence.org/), [DistillerSR](https://www.distillersr.com/)
+- Or structured databases with version control
+- Excel pros: familiar, flexible
+- Excel cons: error-prone, no audit trail, hard to collaborate
+
+**Q: Can I use ChatGPT for systematic reviews?**
+A: ⚠️ Use with caution:
+- ❌ DON'T use for: screening decisions, quality assessment, data extraction
+- ✅ CAN use for: brainstorming search terms, paraphrasing text, organizing notes
+- ✅ BETTER alternatives: [Elicit](https://elicit.com/), [Consensus](https://consensus.app/), [Scite](https://scite.ai/) (designed for research)
+- ALWAYS verify AI outputs with original sources!
+
+### Screening & Selection
+
+**Q: How many reviewers do I need for screening?**
+A: Minimum 2 independent reviewers:
+- Title/abstract screening: 2 reviewers independently
+- Full-text screening: 2 reviewers independently
+- Conflicts: resolved by discussion or 3rd reviewer
+- Pilot screening: ~10% of records to calibrate
+
+**Q: What's an acceptable inter-rater agreement?**
+A: Measured by Cohen's Kappa (κ):
+- κ > 0.80: Excellent
+- κ = 0.60-0.80: Good (acceptable)
+- κ = 0.40-0.60: Moderate (needs improvement)
+- κ < 0.40: Poor (recalibrate criteria)
+
+**Q: Can I use AI to reduce screening workload?**
+A: Yes! AI tools can reduce workload by 60-95%:
+- [ASReview](https://asreview.nl/): 95% workload reduction
+- [Abstrackr](http://abstrackr.cebm.brown.edu/): ~67% reduction
+- Must still manually review AI suggestions
+- Document AI tool use in methods
+
+### Quality & Analysis
+
+**Q: Do I have to assess study quality?**
+A: YES! It's a core requirement of systematic reviews:
+- Shows which studies are trustworthy
+- Helps interpret conflicting results
+- Allows sensitivity analyses
+- Use appropriate tools: [Cochrane RoB 2](https://www.riskofbias.info/), [JBI Tools](https://jbi.global/critical-appraisal-tools)
+
+**Q: When should I do meta-analysis vs narrative synthesis?**
+A: Meta-analysis requirements:
+- ✅ Studies measure same outcome
+- ✅ Sufficient statistical data reported
+- ✅ Studies are comparable (population, intervention)
+- ✅ >3-5 studies available
+- ❌ If not: do narrative synthesis
+- Tools: [RevMan](https://revman.cochrane.org/), [R metafor](https://www.metafor-project.org/)
+
+**Q: What if studies are too different (heterogeneous)?**
+A: Options:
+1. Use random-effects meta-analysis (accounts for heterogeneity)
+2. Do subgroup analyses (by population, intervention type, etc.)
+3. Perform meta-regression (explore sources of heterogeneity)
+4. Resort to narrative synthesis
+5. Report heterogeneity statistics (I², τ²)
+
+### Writing & Reporting
+
+**Q: What's the difference between systematic review and literature review?**
+A:
+| Feature | Literature Review | Systematic Review |
+|---------|-------------------|-------------------|
+| Research question | Broad | Focused, specific (PICO) |
+| Search | Selective | Comprehensive, documented |
+| Selection criteria | Implicit | Explicit, pre-defined |
+| Quality assessment | Variable | Mandatory, standardized |
+| Synthesis | Narrative | Systematic +/- meta-analysis |
+| Protocol | Optional | Required (PRISMA-P) |
+| Reproducible | No | Yes |
+
+**Q: Do I have to follow PRISMA?**
+A: Highly recommended:
+- Many journals REQUIRE PRISMA compliance
+- Improves transparency and reproducibility
+- Makes writing easier (follows logical structure)
+- Use [PRISMA 2020 Checklist](https://www.prisma-statement.org/prisma-2020-checklist)
+- Generate flow diagram: [R package](https://github.com/prisma-flowdiagram/PRISMA2020) or [web tool](http://prisma.thetacollaborative.ca/)
+
+**Q: Where should I publish my systematic review?**
+A: Depends on field:
+- **General**: [Systematic Reviews](https://systematicreviewsjournal.biomedcentral.com/) (open access)
+- **CS/Engineering**: [ACM CSUR](https://dl.acm.org/journal/csur), [IEEE COMST](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9739)
+- **Health**: Cochrane Library, medical specialty journals
+- **Consider**: Impact factor, open access options, audience
+
+### Common Issues
+
+**Q: I found a paper after screening is done. What do I do?**
+A: It happens! Options:
+1. If before analysis: add to full-text screening
+2. If after analysis: mention in limitations
+3. For living reviews: add to next update
+4. Document the paper and why it was missed
+
+**Q: What if I can't access a full-text paper?**
+A: Try:
+1. University library access + interlibrary loan
+2. Email corresponding author directly (surprisingly effective!)
+3. ResearchGate request
+4. Legal repositories: [PubMed Central](https://pmc.ncbi.nlm.nih.gov/), institutional repositories
+5. Last resort: exclude and note in PRISMA diagram
+
+**Q: Reviewers disagree - how do we resolve conflicts?**
+A: Protocol should specify:
+1. Discussion between reviewers (most common)
+2. Third reviewer makes final decision
+3. Pre-defined decision rules
+4. Document all conflicts and resolutions
+5. Report agreement statistics (Kappa)
+
+### Time-Savers
+
+**Q: Any tips to speed up the process?**
+A:
+1. **Screening**: Use [ASReview](https://asreview.nl/) (95% time savings)
+2. **Deduplication**: [ASySD](https://camarades.shinyapps.io/ASySD/) R package
+3. **Citation snowballing**: [ResearchRabbit](https://www.researchrabbit.ai/), [Connected Papers](https://www.connectedpapers.com/)
+4. **PDF extraction**: [GROBID](https://github.com/kermitt2/grobid) for automated extraction
+5. **AI assistance**: [Elicit](https://elicit.com/) for quick summaries
+6. **Team collaboration**: [Covidence](https://www.covidence.org/) or [Rayyan](https://www.rayyan.ai/) for parallel work
+
+**Q: Can I update an existing systematic review?**
+A: Yes! Systematic Review Updates are valuable:
+- Search from last review's end date
+- Use same criteria (or justify changes)
+- Cite original review
+- Some journals specialize in updates
+- Consider "living systematic reviews" for rapidly evolving fields
 
 ---
 
