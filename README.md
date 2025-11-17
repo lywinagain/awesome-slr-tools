@@ -546,14 +546,16 @@ This section highlights open-source tools and code repositories that you can use
 #### Screening & Machine Learning
 
 1. **[ASReview](https://github.com/asreview/asreview)** ⭐ Highly Recommended
+   [![GitHub stars](https://img.shields.io/github/stars/asreview/asreview?style=social)](https://github.com/asreview/asreview)
    - Active learning for systematic reviews
    - Published in Nature Machine Intelligence
    - Reduces workload by up to 95%
    - Privacy-first, no data collection
    - `pip install asreview`
-   - 📊 Stars: 700+ | Language: Python
+   - Language: Python
 
 2. **[LatteReview](https://github.com/PouriaRouzrokh/LatteReview)**
+   [![GitHub stars](https://img.shields.io/github/stars/PouriaRouzrokh/LatteReview?style=social)](https://github.com/PouriaRouzrokh/LatteReview)
    - Low-code AI-powered automation
    - Multi-agent review systems
    - Customizable agent roles
@@ -561,6 +563,7 @@ This section highlights open-source tools and code repositories that you can use
    - Language: Python
 
 3. **[systematic-reviewpy](https://github.com/chandraveshchaudhari/systematic-reviewpy)**
+   [![GitHub stars](https://img.shields.io/github/stars/chandraveshchaudhari/systematic-reviewpy?style=social)](https://github.com/chandraveshchaudhari/systematic-reviewpy)
    - Python framework for automation
    - Customizable and open-source
    - Saves time without quality constraints
@@ -569,6 +572,7 @@ This section highlights open-source tools and code repositories that you can use
 #### Literature Analysis & Bibliometrics
 
 4. **[LitStudy](https://github.com/NLeSC/litstudy)**
+   [![GitHub stars](https://img.shields.io/github/stars/NLeSC/litstudy?style=social)](https://github.com/NLeSC/litstudy)
    - Automate literature analysis from Jupyter notebooks
    - Scientometrics and bibliometrics
    - Network analysis and visualization
@@ -577,6 +581,7 @@ This section highlights open-source tools and code repositories that you can use
    - Language: Python
 
 5. **[pyBibX](https://github.com/Valdecy/pybibx)**
+   [![GitHub stars](https://img.shields.io/github/stars/Valdecy/pybibx?style=social)](https://github.com/Valdecy/pybibx)
    - Bibliometric and scientometric analysis
    - AI-powered features
    - Generates EDA reports
@@ -585,6 +590,7 @@ This section highlights open-source tools and code repositories that you can use
    - Language: Python
 
 6. **[metaknowledge](https://github.com/UWNETLAB/metaknowledge)**
+   [![GitHub stars](https://img.shields.io/github/stars/UWNETLAB/metaknowledge?style=social)](https://github.com/UWNETLAB/metaknowledge)
    - Bibliometric research simplification
    - Reads meta-data from various sources
    - Network analysis capabilities
@@ -594,6 +600,7 @@ This section highlights open-source tools and code repositories that you can use
 #### Citation Snowballing
 
 7. **[snowballing](https://github.com/JoaoFelipe/snowballing)** ⭐
+   [![GitHub stars](https://img.shields.io/github/stars/JoaoFelipe/snowballing?style=social)](https://github.com/JoaoFelipe/snowballing)
    - Literature snowballing tools
    - Chrome plugin for Google Scholar
    - Jupyter Notebook widgets
@@ -605,14 +612,16 @@ This section highlights open-source tools and code repositories that you can use
 #### PDF Data Extraction
 
 8. **[GROBID](https://github.com/kermitt2/grobid)** ⭐ Industry Standard
+   [![GitHub stars](https://img.shields.io/github/stars/kermitt2/grobid?style=social)](https://github.com/kermitt2/grobid)
    - Machine learning for PDF extraction
    - Focus on scientific publications
    - Structured XML/TEI output
    - Extracts metadata + full text
    - 68 fine-grained structure labels
-   - 📊 Stars: 3,500+ | Language: Java/Python
+   - Language: Java/Python
 
 9. **[PDF-Extract-Kit](https://github.com/opendatalab/PDF-Extract-Kit)**
+   [![GitHub stars](https://img.shields.io/github/stars/opendatalab/PDF-Extract-Kit?style=social)](https://github.com/opendatalab/PDF-Extract-Kit)
    - High-quality content extraction
    - Layout detection, formula recognition
    - OCR for complex PDFs
@@ -620,12 +629,14 @@ This section highlights open-source tools and code repositories that you can use
    - Language: Python
 
 10. **[MinerU](https://github.com/opendatalab/MinerU)**
+    [![GitHub stars](https://img.shields.io/github/stars/opendatalab/MinerU?style=social)](https://github.com/opendatalab/MinerU)
     - Transforms PDFs to markdown/JSON
     - LLM-ready format
     - Machine-readable outputs
     - Language: Python
 
 11. **[PDFDataExtractor](https://github.com/cat-lemonade/PDFDataExtractor)**
+    [![GitHub stars](https://img.shields.io/github/stars/cat-lemonade/PDFDataExtractor?style=social)](https://github.com/cat-lemonade/PDFDataExtractor)
     - Semantic information extraction
     - Focused on scientific articles
     - Language: Python
@@ -633,6 +644,7 @@ This section highlights open-source tools and code repositories that you can use
 #### Text Mining & NLP
 
 12. **[medaCy](https://github.com/NLPatVCU/medaCy)**
+    [![GitHub stars](https://img.shields.io/github/stars/NLPatVCU/medaCy?style=social)](https://github.com/NLPatVCU/medaCy)
     - Medical text mining framework
     - Built on spaCy
     - Fast model prototyping
@@ -644,6 +656,7 @@ This section highlights open-source tools and code repositories that you can use
 #### Meta-Analysis
 
 1. **[metafor](https://github.com/wviechtb/metafor)** ⭐ Gold Standard
+   [![GitHub stars](https://img.shields.io/github/stars/wviechtb/metafor?style=social)](https://github.com/wviechtb/metafor)
    - Comprehensive meta-analysis package
    - Equal/fixed/random/mixed-effects models
    - Meta-regression analysis
@@ -653,6 +666,7 @@ This section highlights open-source tools and code repositories that you can use
    - Website: https://wviechtb.github.io/metafor/
 
 2. **[meta](https://github.com/guido-s/meta)**
+   [![GitHub stars](https://img.shields.io/github/stars/guido-s/meta?style=social)](https://github.com/guido-s/meta)
    - User-friendly general package
    - Standard meta-analysis methods
    - Companion to "Meta-Analysis with R" book
@@ -667,6 +681,7 @@ This section highlights open-source tools and code repositories that you can use
 #### Bibliometric Analysis
 
 4. **[bibliometrix](https://github.com/massimoaria/bibliometrix)** ⭐
+   [![GitHub stars](https://img.shields.io/github/stars/massimoaria/bibliometrix?style=social)](https://github.com/massimoaria/bibliometrix)
    - Comprehensive science mapping
    - Citation analysis, co-citation, coupling
    - Network analysis at multiple levels
@@ -678,6 +693,7 @@ This section highlights open-source tools and code repositories that you can use
 #### PRISMA Flow Diagrams
 
 5. **[PRISMA2020](https://github.com/prisma-flowdiagram/PRISMA2020)** ⭐ Official
+   [![GitHub stars](https://img.shields.io/github/stars/prisma-flowdiagram/PRISMA2020?style=social)](https://github.com/prisma-flowdiagram/PRISMA2020)
    - PRISMA 2020-compliant diagrams
    - Interactive HTML output
    - Hover tooltips and hyperlinks
@@ -686,6 +702,7 @@ This section highlights open-source tools and code repositories that you can use
    - Website: https://prisma-flowdiagram.github.io/PRISMA2020/
 
 6. **[livingPRISMAflow](https://github.com/nealhaddaway/livingPRISMAflow)**
+   [![GitHub stars](https://img.shields.io/github/stars/nealhaddaway/livingPRISMAflow?style=social)](https://github.com/nealhaddaway/livingPRISMAflow)
    - Living systematic review diagrams
    - PRISMA checklist conformance
    - Language: R
@@ -693,6 +710,7 @@ This section highlights open-source tools and code repositories that you can use
 #### Deduplication
 
 7. **[ASySD](https://github.com/camaradesuk/ASySD)** ⭐
+   [![GitHub stars](https://img.shields.io/github/stars/camaradesuk/ASySD?style=social)](https://github.com/camaradesuk/ASySD)
    - Automated citation deduplication
    - R package + Shiny app
    - Fuzzy matching algorithms
@@ -703,6 +721,7 @@ This section highlights open-source tools and code repositories that you can use
 ### Automation & Workflow Tools
 
 1. **[Systematic Review Accelerator (SRA)](https://github.com/IEBH/SRA2)**
+   [![GitHub stars](https://img.shields.io/github/stars/IEBH/SRA2?style=social)](https://github.com/IEBH/SRA2)
    - Reference deduplication
    - Fuzzy matching for semi-identical refs
    - Merge multiple search sources
@@ -710,12 +729,14 @@ This section highlights open-source tools and code repositories that you can use
    - Language: JavaScript/Node.js
 
 2. **[Jupyter Guide for Reproducible Research](https://github.com/jupyter-guide/jupyter-guide)**
+   [![GitHub stars](https://img.shields.io/github/stars/jupyter-guide/jupyter-guide?style=social)](https://github.com/jupyter-guide/jupyter-guide)
    - Crowdsourced guidelines
    - Ten Simple Rules companion
    - Reproducible SLR workflows
    - Language: Jupyter Notebooks
 
 3. **[Ten Rules for Jupyter](https://github.com/jupyter-guide/ten-rules-jupyter)**
+   [![GitHub stars](https://img.shields.io/github/stars/jupyter-guide/ten-rules-jupyter?style=social)](https://github.com/jupyter-guide/ten-rules-jupyter)
    - Best practices for notebooks
    - Sharing computational analyses
    - Reproducibility guidelines
@@ -724,6 +745,7 @@ This section highlights open-source tools and code repositories that you can use
 ### Text Mining Resources
 
 - **[text_mining_resources](https://github.com/stepthom/text_mining_resources)**
+  [![GitHub stars](https://img.shields.io/github/stars/stepthom/text_mining_resources?style=social)](https://github.com/stepthom/text_mining_resources)
   - Learning resources for text mining
   - NLP techniques and tools
   - Seven-step framework
@@ -744,6 +766,7 @@ Explore curated collections of repositories:
 ### Key Datasets on GitHub
 
 - **[SYNERGY Dataset](https://github.com/asreview/synergy-dataset)**
+  [![GitHub stars](https://img.shields.io/github/stars/asreview/synergy-dataset?style=social)](https://github.com/asreview/synergy-dataset)
   - Open dataset for study selection
   - 169,288 academic works
   - 26 systematic reviews
