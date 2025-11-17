@@ -20,6 +20,7 @@ A comprehensive collection of tools, resources, and tutorials for conducting sys
 - [Reference Management](#reference-management)
 - [Collaboration Tools](#collaboration-tools)
 - [AI-Powered Tools](#ai-powered-tools)
+- [Open Source Tools & GitHub Repositories](#open-source-tools--github-repositories)
 - [Datasets & Benchmarks](#datasets--benchmarks)
 - [Learning Resources](#learning-resources)
 
@@ -447,6 +448,247 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 - Don't use general ChatGPT for sensitive research data
 - Combine tools for best results (e.g., Elicit + Scite + ResearchRabbit)
 - Always verify AI-generated content
+
+---
+
+## Open Source Tools & GitHub Repositories
+
+This section highlights open-source tools and code repositories that you can use, modify, and contribute to. Perfect for developers and researchers who want programmatic access or customizable solutions.
+
+### Python Libraries & Tools
+
+#### Screening & Machine Learning
+
+1. **[ASReview](https://github.com/asreview/asreview)** ⭐ Highly Recommended
+   - Active learning for systematic reviews
+   - Published in Nature Machine Intelligence
+   - Reduces workload by up to 95%
+   - Privacy-first, no data collection
+   - `pip install asreview`
+   - 📊 Stars: 700+ | Language: Python
+
+2. **[LatteReview](https://github.com/PouriaRouzrokh/LatteReview)**
+   - Low-code AI-powered automation
+   - Multi-agent review systems
+   - Customizable agent roles
+   - Supports multiple review rounds
+   - Language: Python
+
+3. **[systematic-reviewpy](https://github.com/chandraveshchaudhari/systematic-reviewpy)**
+   - Python framework for automation
+   - Customizable and open-source
+   - Saves time without quality constraints
+   - Language: Python
+
+#### Literature Analysis & Bibliometrics
+
+4. **[LitStudy](https://github.com/NLeSC/litstudy)**
+   - Automate literature analysis from Jupyter notebooks
+   - Scientometrics and bibliometrics
+   - Network analysis and visualization
+   - Natural language processing
+   - `pip install litstudy`
+   - Language: Python
+
+5. **[pyBibX](https://github.com/Valdecy/pybibx)**
+   - Bibliometric and scientometric analysis
+   - AI-powered features
+   - Generates EDA reports
+   - Creates document/author/institution IDs
+   - `pip install pybibx`
+   - Language: Python
+
+6. **[metaknowledge](https://github.com/UWNETLAB/metaknowledge)**
+   - Bibliometric research simplification
+   - Reads meta-data from various sources
+   - Network analysis capabilities
+   - `pip install metaknowledge`
+   - Language: Python
+
+#### Citation Snowballing
+
+7. **[snowballing](https://github.com/JoaoFelipe/snowballing)** ⭐
+   - Literature snowballing tools
+   - Chrome plugin for Google Scholar
+   - Jupyter Notebook widgets
+   - Citation graph visualization
+   - Forward/backward snowballing
+   - Documentation: https://joaofelipe.github.io/snowballing
+   - Language: Python
+
+#### PDF Data Extraction
+
+8. **[GROBID](https://github.com/kermitt2/grobid)** ⭐ Industry Standard
+   - Machine learning for PDF extraction
+   - Focus on scientific publications
+   - Structured XML/TEI output
+   - Extracts metadata + full text
+   - 68 fine-grained structure labels
+   - 📊 Stars: 3,500+ | Language: Java/Python
+
+9. **[PDF-Extract-Kit](https://github.com/opendatalab/PDF-Extract-Kit)**
+   - High-quality content extraction
+   - Layout detection, formula recognition
+   - OCR for complex PDFs
+   - Works on papers, textbooks, reports
+   - Language: Python
+
+10. **[MinerU](https://github.com/opendatalab/MinerU)**
+    - Transforms PDFs to markdown/JSON
+    - LLM-ready format
+    - Machine-readable outputs
+    - Language: Python
+
+11. **[PDFDataExtractor](https://github.com/cat-lemonade/PDFDataExtractor)**
+    - Semantic information extraction
+    - Focused on scientific articles
+    - Language: Python
+
+#### Text Mining & NLP
+
+12. **[medaCy](https://github.com/NLPatVCU/medaCy)**
+    - Medical text mining framework
+    - Built on spaCy
+    - Fast model prototyping
+    - Highly predictive medical NLP
+    - Language: Python
+
+### R Packages
+
+#### Meta-Analysis
+
+1. **[metafor](https://github.com/wviechtb/metafor)** ⭐ Gold Standard
+   - Comprehensive meta-analysis package
+   - Equal/fixed/random/mixed-effects models
+   - Meta-regression analysis
+   - Forest, funnel, radial plots
+   - Extensive documentation
+   - `install.packages("metafor")`
+   - Website: https://wviechtb.github.io/metafor/
+
+2. **[meta](https://github.com/guido-s/meta)**
+   - User-friendly general package
+   - Standard meta-analysis methods
+   - Companion to "Meta-Analysis with R" book
+   - `install.packages("meta")`
+
+3. **[dmetar](https://dmetar.protectlab.org/)**
+   - Companion to "Doing Meta-Analysis in R"
+   - Utility functions for meta/metafor
+   - Facilitates workflow
+   - `install.packages("dmetar")`
+
+#### Bibliometric Analysis
+
+4. **[bibliometrix](https://github.com/massimoaria/bibliometrix)** ⭐
+   - Comprehensive science mapping
+   - Citation analysis, co-citation, coupling
+   - Network analysis at multiple levels
+   - Visualization capabilities
+   - Web interface: Biblioshiny
+   - `install.packages("bibliometrix")`
+   - Website: https://www.bibliometrix.org/
+
+#### PRISMA Flow Diagrams
+
+5. **[PRISMA2020](https://github.com/prisma-flowdiagram/PRISMA2020)** ⭐ Official
+   - PRISMA 2020-compliant diagrams
+   - Interactive HTML output
+   - Hover tooltips and hyperlinks
+   - Shiny app available
+   - `install.packages("PRISMA2020")`
+   - Website: https://prisma-flowdiagram.github.io/PRISMA2020/
+
+6. **[livingPRISMAflow](https://github.com/nealhaddaway/livingPRISMAflow)**
+   - Living systematic review diagrams
+   - PRISMA checklist conformance
+   - Language: R
+
+#### Deduplication
+
+7. **[ASySD](https://github.com/camaradesuk/ASySD)** ⭐
+   - Automated citation deduplication
+   - R package + Shiny app
+   - Fuzzy matching algorithms
+   - Web app: https://camarades.shinyapps.io/ASySD/
+   - `install.packages("ASySD")`
+   - Language: R
+
+### Automation & Workflow Tools
+
+1. **[Systematic Review Accelerator (SRA)](https://github.com/IEBH/SRA2)**
+   - Reference deduplication
+   - Fuzzy matching for semi-identical refs
+   - Merge multiple search sources
+   - Developed at Bond University
+   - Language: JavaScript/Node.js
+
+2. **[Jupyter Guide for Reproducible Research](https://github.com/jupyter-guide/jupyter-guide)**
+   - Crowdsourced guidelines
+   - Ten Simple Rules companion
+   - Reproducible SLR workflows
+   - Language: Jupyter Notebooks
+
+3. **[Ten Rules for Jupyter](https://github.com/jupyter-guide/ten-rules-jupyter)**
+   - Best practices for notebooks
+   - Sharing computational analyses
+   - Reproducibility guidelines
+   - Language: Jupyter Notebooks
+
+### Text Mining Resources
+
+- **[text_mining_resources](https://github.com/stepthom/text_mining_resources)**
+  - Learning resources for text mining
+  - NLP techniques and tools
+  - Seven-step framework
+  - Document clustering, entity extraction
+
+### GitHub Topic Collections
+
+Explore curated collections of repositories:
+
+- **[systematic-review](https://github.com/topics/systematic-review)** - 50+ repositories
+- **[systematic-reviews](https://github.com/topics/systematic-reviews)** - 40+ repositories
+- **[literature-review](https://github.com/topics/literature-review)** - 100+ repositories
+- **[bibliometrics](https://github.com/topics/bibliometrics)** - 112 repositories (37 R, 21 Python)
+- **[meta-analysis](https://github.com/topics/meta-analysis)** - Various tools
+- **[citation-analysis](https://github.com/topics/citation-analysis)** - Network tools
+- **[reproducible-research](https://github.com/topics/reproducible-research)** - Workflow tools
+
+### Key Datasets on GitHub
+
+- **[SYNERGY Dataset](https://github.com/asreview/synergy-dataset)**
+  - Open dataset for study selection
+  - 169,288 academic works
+  - 26 systematic reviews
+  - Benchmarking ML models
+
+### Installation Quick Start
+
+**Python Environment:**
+```bash
+# Create virtual environment
+python -m venv slr-env
+source slr-env/bin/activate  # On Windows: slr-env\Scripts\activate
+
+# Install key tools
+pip install asreview litstudy pybibx metaknowledge
+```
+
+**R Environment:**
+```r
+# Install key packages
+install.packages(c("metafor", "meta", "bibliometrix", "PRISMA2020", "ASySD"))
+```
+
+### Contributing to Open Source
+
+Many of these tools welcome contributions:
+- 🐛 Report bugs and issues
+- 📖 Improve documentation
+- 💡 Suggest features
+- 🔧 Submit pull requests
+- ⭐ Star repositories you find useful
 
 ---
 
