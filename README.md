@@ -14,19 +14,44 @@ A comprehensive collection of tools, resources, and tutorials for conducting sys
 - [Key Journals & Publications](#key-journals--publications)
 - [Planning & Protocol](#planning--protocol)
 - [Search & Discovery](#search--discovery)
+  - [Search Strategy Development Tools](#search-strategy-development-tools)
+  - [Grey Literature & Special Databases](#grey-literature--special-databases)
+  - [Citation Discovery](#citation-discovery)
+  - [API Resources](#api-resources)
 - [Study Management](#study-management)
 - [Screening & Selection](#screening--selection)
+  - [AI-Powered Screening Tools](#ai-powered-screening-tools)
+  - [Web-Based Screening Platforms](#web-based-screening-platforms)
 - [Data Extraction](#data-extraction)
+  - [AI-Powered Data Extraction](#ai-powered-data-extraction)
+  - [PICO Extraction Systems](#pico-extraction-systems)
+  - [Data Extraction Templates](#data-extraction-templates)
 - [Quality Assessment](#quality-assessment)
+  - [Study Design-Specific Tools](#study-design-specific-tools)
+  - [Qualitative & Mixed Methods Tools](#qualitative--mixed-methods-tools)
+  - [Visualization & Evidence Grading](#visualization--evidence-grading)
 - [Analysis & Synthesis](#analysis--synthesis)
 - [Visualization](#visualization)
 - [Writing & Reporting](#writing--reporting)
 - [Reference Management](#reference-management)
+  - [Deduplication Tools](#deduplication-tools)
 - [Collaboration Tools](#collaboration-tools)
 - [AI-Powered Tools](#ai-powered-tools)
 - [Open Source Tools & GitHub Repositories](#open-source-tools--github-repositories)
+  - [Python Libraries & Tools](#python-libraries--tools)
+  - [R Packages](#r-packages)
 - [Datasets & Benchmarks](#datasets--benchmarks)
 - [Learning Resources](#learning-resources)
+  - [Comprehensive Methodology Guides](#comprehensive-methodology-guides)
+  - [University Library Guides](#university-library-guides)
+- [Specialized Review Types & Methodologies](#specialized-review-types--methodologies)
+  - [Living Systematic Reviews](#living-systematic-reviews)
+  - [Rapid Review Methodologies](#rapid-review-methodologies)
+  - [Scoping Review Tools & Frameworks](#scoping-review-tools--frameworks)
+  - [Umbrella Review Tools](#umbrella-review-tools)
+  - [Realist Review Frameworks](#realist-review-frameworks)
+  - [Protocol Registration Platforms](#protocol-registration-platforms)
+  - [Qualitative Synthesis Methods](#qualitative-synthesis-methods)
 - [⚠️ Common Challenges & How to Avoid Them](#%EF%B8%8F-common-challenges--how-to-avoid-them)
 - [📝 Practical Examples & Templates](#-practical-examples--templates)
 - [❓ FAQ for Young Researchers](#-faq-for-young-researchers)
@@ -183,11 +208,99 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 - **[ERIC](https://eric.ed.gov/)** - Education research
 - **[ScienceDirect](https://www.sciencedirect.com/)** - Multidisciplinary scientific database
 
+### Search Strategy Development Tools:
+
+1. **[SR-Accelerator Polyglot Search Translator](https://sr-accelerator.com/#/polyglot)** ⭐ Essential
+   [![GitHub stars](https://img.shields.io/github/stars/IEBH/sra-polyglot?style=social)](https://github.com/IEBH/sra-polyglot)
+   - Cross-database search translation
+   - Supports: PubMed, Ovid MEDLINE, Cochrane, Embase, Web of Science, Scopus, PsycInfo, ProQuest, SPORTDiscus, CINAHL
+   - Web interface + npm package
+   - Validation study: 32% time reduction without errors
+   - `npm install sra-polyglot`
+   - GitHub: https://github.com/IEBH/sra-polyglot
+
+2. **[BOOL](https://scoperac.com/bool/)**
+   - AI-powered Boolean search assistance
+   - Plugs into Google, Bing, Google Scholar, Scopus
+   - CSV import/export
+   - Free web-based tool
+
+3. **[PRESS 2015](https://www.cadth.ca/press-2015)** ⭐ Essential Validation
+   - Peer Review of Electronic Search Strategies
+   - Evidence-based checklists
+   - Covers Boolean operators, subject headings, wildcards, field searching
+   - Studies show 78-93% of reviews contain search errors
+   - Official checklist: https://kib.ki.se/en/search-evaluate/systematic-reviews/press-2015-checklist-search-strategies
+
+### Grey Literature & Special Databases:
+
+**Grey Literature:**
+- **[CADTH Grey Matters](https://www.cadth.ca/grey-matters)** - Practical toolkit for health grey literature
+- **[OpenGrey](http://www.opengrey.eu/)** - European grey literature
+- **[Overton](https://www.overton.io/)** - Policy documents, guidelines, think tank publications
+
+**Trial Registries:**
+- **[ClinicalTrials.gov](https://clinicaltrials.gov/)** - US clinical trials
+- **[WHO ICTRP](https://trialsearch.who.int/)** - International trials
+- **[ANZCTR](https://www.anzctr.org.au/)** - Australia/New Zealand trials
+- **[EU Clinical Trials Register](https://www.clinicaltrialsregister.eu/)**
+- **[ISRCTN Registry](https://www.isrctn.com/)**
+
+**Preprint Servers:**
+- **[medRxiv](https://www.medrxiv.org/)** - Medicine preprints
+- **[bioRxiv](https://www.biorxiv.org/)** - Biology preprints
+- **[arXiv](https://arxiv.org/)** - Multiple disciplines
+- **[PsyArXiv](https://psyarxiv.com/)** - Psychology preprints
+
 ### Citation Discovery:
 
 - **[Connected Papers](https://www.connectedpapers.com/)** - Visual citation network exploration
 - **[ResearchRabbit](https://www.researchrabbit.ai/)** - "Spotify for research" - personalized recommendations
 - **[CitNetExplorer](https://www.citnetexplorer.nl/)** - Citation network analysis
+- **[Citation Gecko](https://citationgecko.com/)** ⭐ Free
+  [![GitHub stars](https://img.shields.io/github/stars/CitationGecko/gecko-react?style=social)](https://github.com/CitationGecko/gecko-react)
+  - Forward and backward citation chasing
+  - BibTeX import, Zotero integration
+  - Network visualization with timeline view
+  - Iterative paper expansion
+  - Uses OpenCitations, Crossref, Microsoft Academic
+  - DOI: 10.5281/zenodo.7068284
+
+- **[Local Citation Network](https://localcitationnetwork.github.io/)** ⭐ Free
+  [![GitHub stars](https://img.shields.io/github/stars/LocalCitationNetwork/LocalCitationNetwork.github.io?style=social)](https://github.com/LocalCitationNetwork/LocalCitationNetwork.github.io)
+  - Visualizes local citation networks from seed articles
+  - "Top Cited" and "Top Citing" recommendations
+  - Uses OpenAlex, Semantic Scholar, Crossref, OpenCitations
+  - GPL-3 license, web-based
+
+- **[Citation Graph Builder](https://github.com/FZJ-IEK3-VSA/citation-graph-builder)**
+  [![GitHub stars](https://img.shields.io/github/stars/FZJ-IEK3-VSA/citation-graph-builder?style=social)](https://github.com/FZJ-IEK3-VSA/citation-graph-builder)
+  - PDF parsing (GROBID) with bibliographic APIs
+  - SVG export for publication-ready figures
+  - MIT license
+  - Install via conda
+
+- **[Citograph](https://github.com/arsengit/citograph)**
+  [![GitHub stars](https://img.shields.io/github/stars/arsengit/citograph?style=social)](https://github.com/arsengit/citograph)
+  - Citation graphs from Semantic Scholar
+  - JSON output for Excalidraw
+  - Apache 2.0 license
+
+### API Resources:
+
+- **[OpenCitations](https://opencitations.net/)** - 2+ billion citation links (July 2024)
+  [![GitHub stars](https://img.shields.io/github/stars/opencitations?style=social)](https://github.com/opencitations)
+  - SPARQL endpoint, REST APIs, dataset dumps
+  - CSV, N-Triples, Scholix formats
+  - CC0 licensed data, ISC licensed software
+  - Sources: Crossref, NIH-OCC, DataCite, OpenAIRE, JaLC
+
+- **[OpenAlex API Tutorials](https://github.com/ourresearch/openalex-api-tutorials)**
+  [![GitHub stars](https://img.shields.io/github/stars/ourresearch/openalex-api-tutorials?style=social)](https://github.com/ourresearch/openalex-api-tutorials)
+  - Jupyter notebooks with bibliometric analysis
+  - Python code snippets
+  - No authentication required
+  - 100k requests/day limit
 
 ### Systematic Review Toolbox:
 - **[SR Toolbox](http://systematicreviewtools.com/)** - Directory of 235+ tools for literature reviews
@@ -254,6 +367,56 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
    - Machine learning-assisted screening
    - Supports all mandatory features
 
+### Web-Based Screening Platforms:
+
+4. **[Colandr](https://www.colandrcommunity.com/)** - Open Source
+   - Machine learning-assisted screening
+   - Full evidence synthesis workflows
+   - PICO framework support
+   - Customizable data extraction forms
+   - MIT-licensed
+   - Uses word2vec for ML
+   - Free access
+
+5. **[SRDR+](https://srdr.ahrq.gov/)** ⚠️ Retiring Nov 28, 2025
+   - Machine learning-informed screening
+   - FHIR-compliant data extraction
+   - Free web-based platform
+   - Customizable extraction forms
+   - **Important**: Migrating to alternatives recommended
+   - Website: https://srdr.ahrq.gov/
+
+6. **[SRA2 (Systematic Review Accelerator)](https://github.com/CREBP/SRA2)**
+   [![GitHub stars](https://img.shields.io/github/stars/CREBP/SRA2?style=social)](https://github.com/CREBP/SRA2)
+   - Search optimization
+   - Reference deduplication
+   - Multi-researcher consolidation
+   - Open-source PHP/MySQL tool
+   - Successor to original SRA
+
+7. **[SyRF (Systematic Review Facility)](https://syrf.org.uk/)**
+   - Preclinical systematic reviews focus
+   - Collaborative screening
+   - Machine learning assistance
+   - Risk of bias auto-detection
+   - Living systematic reviews support
+   - Free access
+   - User guide: https://camaradesuk.github.io/syrf_userguide/
+
+8. **[CADIMA](https://www.cadima.info/)**
+   - Free open-access platform
+   - Developed for agriculture and environmental sciences
+   - Supports entire systematic review process
+   - Protocol development
+   - Statistical analysis integration with R
+   - Export files for offline work
+
+9. **[SysRev.com](https://sysrev.com/)**
+   - Free collaborative data extraction
+   - Boolean, categorical, and string labels
+   - Multiple reviewers support
+   - Abstract and full-text screening
+
 ### Manual Screening Support:
 
 - **[Covidence](https://www.covidence.org/)** - Structured screening workflow
@@ -294,6 +457,115 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 ### Data Exchange:
 - **REFI-QDA** - Standard format for exchanging data between NVivo, MAXQDA, and Atlas.ti
 
+### AI-Powered Data Extraction:
+
+**Automated Extraction from Clinical Trials:**
+
+1. **[Trialstreamer](https://trialstreamer.robotreviewer.net/)** ⭐ Living Database
+   - Living database of 700,000+ RCTs
+   - Automatic RCT identification from PubMed
+   - PICO extraction and MeSH mapping
+   - Sample size extraction
+   - Risk of bias prediction
+   - Daily updates with free database download
+   - Searches WHO ICTRP and PubMed
+   - Structured query interface
+   - Marshall et al. (2020) JAMIA
+
+**PICO Extraction Systems:**
+
+2. **BioBERT/BioELECTRA-PICO** (Hugging Face models)
+   - Named Entity Recognition for PICO elements
+   - BioELECTRA-PICO (110M parameters)
+   - BioMobileBERT (compact, faster)
+   - F1 scores 70-90% depending on element
+   - Domain-adapted for biomedical text
+
+3. **[EBM-NLP Dataset](https://github.com/bepnye/EBM-NLP)**
+   - 5,000 annotated RCT abstracts
+   - Gold standard for PICO extraction research
+   - Publicly available corpus
+
+4. **Section-Specific Learning Approach** (Hu et al., 2023 Bioinformatics)
+   - >90% extraction accuracy from Methods sections
+   - Two-step pipeline: sentence classification + NER
+   - Focus on structured sections
+
+5. **AlpaPICO**
+   - LLM-based PICO extraction from clinical trials
+   - Research code available
+
+6. **OpenAI Batch API** - Large Scale
+   - Parallel PICO extraction from 680,000+ abstracts
+   - PostgreSQL database storage
+   - <3 hours processing for 700,000 abstracts
+   - For EU HTAR compliance
+
+**LLM-Based Extraction:**
+
+7. **ChatGPT/GPT-4** - API-based
+   - ~80% accuracy for PICO elements in feasibility studies
+   - Prompt engineering with JSON schemas
+   - `pip install openai`
+   - Commercial API costs ~$1.50/1000 pages
+   - Limitations: hallucinations requiring validation
+
+8. **Claude (Anthropic)**
+   - 65-82% agreement across runs for binary outcomes
+   - Kappa: 0.65-0.82 for consistency
+
+9. **[ChatPDF](https://www.chatpdf.com/)**
+   - LLM-powered PDF analysis
+   - 70%+ correct responses for binary outcomes
+   - Kappa: 0.78-0.96 for agreement
+
+10. **[Mistral OCR](https://mistral.ai/news/mistral-ocr)**
+    - Advanced document understanding via mistral-ocr-latest API
+    - Handles complex elements (math, tables, images)
+    - Thousands of scripts supported
+    - 2000 pages/minute processing
+    - $1/1000 pages pricing
+    - Self-hosting option
+    - Markdown output including images
+
+**Specialized Tools:**
+
+11. **[MedTrialExtractor](https://github.com/TakedaGME/MedTrialExtractor)**
+    - Entity and relationship extraction
+    - BiLSTM and BERT-based models
+    - Designed for systematic reviews
+
+12. **Supervised Distant Supervision (SDS)** (Wallace et al., 2016 PubMed)
+    - Extracts PICO sentences from full-text
+    - Uses Cochrane Database of Systematic Reviews (CDSR)
+
+**Data Extraction Templates:**
+
+13. **[Cochrane Data Extraction Templates](https://training.cochrane.org/handbook)**
+    - Comprehensive forms for RCTs and non-RCTs
+    - Haematological Malignancies Group template: https://training.cochrane.org/sites/training.cochrane.org/files/public/uploads/resources/downloadable_resources/English/Collecting%20data%20-%20form%20for%20RCTs%20only.doc
+
+14. **PIECES Excel Workbook** (Texas A&M Libraries)
+    - Developer: Margaret J. Foster
+    - Advanced Excel with drop-down menus
+    - Range checks, data validation
+    - Prevents entry errors
+    - Customizable workbooks
+
+15. **[REDCap](https://www.project-redcap.org/)**
+    - HIPAA-compliant survey and database creation
+    - Custom forms builder
+    - Data validation
+    - Export to Excel/CSV/SPSS
+    - Requires institutional license
+
+16. **Epi Info + R Pipeline**
+    - 10-step guideline: https://github.com/Afifistat/Data-extraction-guideline.git
+    - Database design for data extraction
+    - R scripts for data comparison
+    - Open-source alternative for complex reviews
+    - Systematic Reviews (2023) publication
+
 ---
 
 ## Quality Assessment
@@ -311,16 +583,102 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
    - Adaptable framework
    - Free checklists
 
-3. **[ROBINS-I](https://www.riskofbias.info/welcome/robins-i-tool)**
-   - Risk of bias in non-randomized studies
-   - For intervention studies
+3. **[ROBINS-I](https://www.riskofbias.info/welcome/robins-i-tool)** - v2 Released Nov 2024
+   - Risk of bias in non-randomized intervention studies
+   - 7 bias domains with detailed guidance
+   - Version 2: https://www.riskofbias.info/welcome/robins-i-v2
+   - Improved algorithms and usability
 
-### Quality Assessment Frameworks:
+### Study Design-Specific Tools:
 
-- **[AMSTAR 2](https://amstar.ca/)** - For systematic reviews of interventions
-- **[CASP Checklists](https://casp-uk.net/casp-tools-checklists/)** - Critical Appraisal Skills Programme
-- **[QUADAS-2](https://www.bristol.ac.uk/population-health-sciences/projects/quadas/)** - Diagnostic accuracy studies
+4. **[Newcastle-Ottawa Scale (NOS)](https://www.ohri.ca/programs/clinical_epidemiology/oxford.asp)**
+   - Star-based quality rating (0-9 stars)
+   - For cohort and case-control studies
+   - Assesses selection, comparability, outcome
+   - Downloadable PDF: https://www.ohri.ca/programs/clinical_epidemiology/nosgen.pdf
+
+5. **[QUADAS-2](https://www.bristol.ac.uk/population-health-sciences/projects/quadas/quadas-2/)** ⭐
+   - Diagnostic accuracy studies
+   - 4 domains: patient selection, index test, reference standard, flow/timing
+   - Risk of bias and applicability concerns
+   - Implementation manual available
+   - NICE guidance: https://www.nice.org.uk/process/pmg6/resources/the-guidelines-manual-appendices-bi-2549703709/chapter/appendix-f-methodology-checklist-the-quadas-2-tool-for-studies-of-diagnostic-test-accuracy
+   - QUADAS-AI version for AI diagnostic studies expected 2025
+
+6. **[QUIPS](https://methods.cochrane.org/prognosis/tools)**
+   - Assesses prognostic factor studies
+   - 6 domains with three-grade risk of bias scale
+   - Median 20 minutes per study
+   - Inter-rater kappa 0.56-0.82
+   - Recommended by Cochrane Prognosis Methods Group
+   - Visualization supported by robvis
+
+7. **[PROBAST](https://www.probast.org/)**
+   - Evaluates prediction model studies
+   - 4 domains: participants, predictors, outcome, analysis
+   - 20 signaling questions
+   - PDF: https://www.probast.org/wp-content/uploads/2020/02/PROBAST_20190515.pdf
+   - Excel templates for systematic reviews
+
+### Qualitative & Mixed Methods Tools:
+
+8. **[MMAT (Mixed Methods Appraisal Tool)](https://www.mcgill.ca/familymed/research/resources/funding/mmat)** ⭐
+   - Version 2018 current
+   - Covers qualitative studies, RCTs, non-randomized quantitative, descriptive, mixed methods
+   - 5 core criteria per category
+   - Download: http://mixedmethodsappraisaltoolpublic.pbworks.com/
+   - Developed through modified e-Delphi with 73 experts
+
+9. **[COREQ](https://www.equator-network.org/reporting-guidelines/coreq/)**
+   - 32-item checklist for interviews and focus groups
+   - Covers research team reflexivity, study design, data analysis
+   - Most frequently cited qualitative research reporting guideline
+
+10. **[ENTREQ](https://pubmed.ncbi.nlm.nih.gov/22894893/)**
+    - 21-item checklist for systematic reviews of qualitative research
+    - 5 domains
+    - Higher uptake in reviews (28%) than COREQ (17%)
+
+### Systematic Review Quality Assessment:
+
+11. **[AMSTAR 2](https://amstar.ca/)** ⭐ Essential
+    - 16-item critical appraisal tool for systematic reviews
+    - 7 critical domains
+    - Overall ratings: high, moderate, low, critically low confidence
+    - Published in BMJ 2017: https://pmc.ncbi.nlm.nih.gov/articles/PMC5833365/
+    - Training videos and resources available
+    - Used in ~80% of umbrella reviews
+
+12. **[ROBIS (Risk Of Bias In Systematic reviews)](https://www.bristol.ac.uk/population-health-sciences/projects/robis/)**
+    - Three-phase instrument focusing on bias
+    - Complementary to AMSTAR 2
+    - More sophisticated bias assessment
+
+### Visualization & Evidence Grading:
+
+13. **[robvis](https://github.com/mcguinlu/robvis)** ⭐ Essential (See R packages section)
+    - Publication-quality risk of bias figures
+    - Supports: RoB 2, ROBINS-I, ROBINS-E, QUADAS-2, QUIPS
+    - Colorblind-friendly schemes
+    - Over 1,500 academic citations
+    - Web app: https://mcguinlu.shinyapps.io/robvis (no R required)
+
+14. **[GRADEpro GDT](https://www.gradepro.org/)**
+    - Creates Summary of Findings tables
+    - Evidence Profiles with evidence-to-decision frameworks
+    - Free web-based software: https://gdt.gradepro.org/app/
+    - Over 100,000 users worldwide
+    - Mobile/desktop compatibility
+
+### Additional Quality Assessment Frameworks:
+
+- **[CASP Checklists](https://casp-uk.net/casp-tools-checklists/)** ⭐ Free Downloads
+  - 8 different checklists: systematic reviews, RCTs, qualitative, cohort, case control, diagnostic, economic evaluations, clinical prediction rules, cross-sectional
+  - All free downloads under Creative Commons license
+
 - **[NIH Quality Assessment Tools](https://www.nhlbi.nih.gov/health-topics/study-quality-assessment-tools)**
+  - Multiple study designs
+  - Developed by NHLBI
 
 ---
 
@@ -454,9 +812,42 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 
 ### Deduplication Tools:
 
-- EndNote, Zotero, Mendeley (built-in)
-- **[SRA De-duplicator](https://sr-accelerator.com/)** - Systematic Review Accelerator
-- EPPI-Reviewer, DistillerSR (integrated)
+> **🎯 Performance Comparison:** Rayyan (highest sensitivity/specificity) → ASySD → Deduklick → EndNote/Mendeley
+
+1. **[Rayyan](https://www.rayyan.ai/)** ⭐ Best Performance
+   - Highest sensitivity (0.98) and specificity (0.96+)
+   - Automatic deduplication with screening
+   - Tagging and highlighting features
+   - Free for up to 3 active reviews
+
+2. **[ASySD (Automated Systematic Search Deduplicator)](https://camarades.shinyapps.io/ASySD/)** - Free
+   - Rapid, open-source, interoperable
+   - For biomedical systematic reviews
+   - R package + Shiny app
+   - Higher sensitivity than EndNote
+   - GitHub: https://github.com/camaradesuk/ASySD
+   - Published in BMC Biology (Hair et al. 2023)
+
+3. **[Deduklick](https://pubmed.ncbi.nlm.nih.gov/35854436/)** - Novel Algorithm
+   - Explainable automated deduplication
+   - 99.51% mean recall
+   - 100% precision
+   - Published in Systematic Reviews (Borissov et al. 2022)
+
+4. **[Systematic Review Accelerator Deduplicator](https://sr-accelerator.com/)**
+   - Sorts by likelihood of duplication
+   - XML file input (EndNote)
+   - Higher sensitivity than EndNote
+   - **Note**: Moving to TERA platform, paid after October 31, 2025
+
+5. **[Mendeley](https://www.mendeley.com/)** - Free
+   - Good balance: 0.93 sensitivity and 0.93 PPV
+   - Freely available
+   - Built-in deduplication
+
+6. **EndNote, Zotero** - Built-in
+   - EndNote: Best for large reviews (5,000-10,000+ refs)
+   - Zotero: Free and open source
 
 ---
 
@@ -564,14 +955,43 @@ This section highlights open-source tools and code repositories that you can use
 
 3. **[systematic-reviewpy](https://github.com/chandraveshchaudhari/systematic-reviewpy)**
    [![GitHub stars](https://img.shields.io/github/stars/chandraveshchaudhari/systematic-reviewpy?style=social)](https://github.com/chandraveshchaudhari/systematic-reviewpy)
-   - Python framework for automation
-   - Customizable and open-source
-   - Saves time without quality constraints
+   - Automates PRISMA workflows with NLP
+   - Generates analysis tables and workflow diagrams
+   - Creates ASReview files
+   - Provides stemming, lemmatization, paper sorting
+   - `pip install systematic-reviewpy`
+   - Language: Python
+
+4. **[ProfOlaf](https://github.com/sr-lab/ProfOlaf)**
+   [![GitHub stars](https://img.shields.io/github/stars/sr-lab/ProfOlaf?style=social)](https://github.com/sr-lab/ProfOlaf)
+   - Iterative snowballing with LLM-assisted extraction
+   - Human-in-the-loop filtering
+   - Topic extraction and query answering
+   - Citation network analysis for systematic reviews
+   - Released 2024
+   - Language: Python
+
+5. **[LLAssist](https://github.com/cyharyanto/llassist)**
+   [![GitHub stars](https://img.shields.io/github/stars/cyharyanto/llassist?style=social)](https://github.com/cyharyanto/llassist)
+   - LLM-based literature screening
+   - Automated relevance assessment
+   - Key information extraction
+   - Matches papers against research questions
+   - Released 2024
+   - Language: Python
+
+6. **[RobotReviewer](https://github.com/ijmarshall/robotreviewer)**
+   [![GitHub stars](https://img.shields.io/github/stars/ijmarshall/robotreviewer?style=social)](https://github.com/ijmarshall/robotreviewer)
+   - Automatically extracts risk of bias from clinical trials
+   - Identifies PICO elements
+   - Machine learning for RCT identification
+   - Web-based interface at https://www.robotreviewer.net/
+   - `pip install robotreviewer`
    - Language: Python
 
 #### Literature Analysis & Bibliometrics
 
-4. **[LitStudy](https://github.com/NLeSC/litstudy)**
+7. **[LitStudy](https://github.com/NLeSC/litstudy)**
    [![GitHub stars](https://img.shields.io/github/stars/NLeSC/litstudy?style=social)](https://github.com/NLeSC/litstudy)
    - Automate literature analysis from Jupyter notebooks
    - Scientometrics and bibliometrics
@@ -580,7 +1000,7 @@ This section highlights open-source tools and code repositories that you can use
    - `pip install litstudy`
    - Language: Python
 
-5. **[pyBibX](https://github.com/Valdecy/pybibx)**
+8. **[pyBibX](https://github.com/Valdecy/pybibx)**
    [![GitHub stars](https://img.shields.io/github/stars/Valdecy/pybibx?style=social)](https://github.com/Valdecy/pybibx)
    - Bibliometric and scientometric analysis
    - AI-powered features
@@ -589,7 +1009,7 @@ This section highlights open-source tools and code repositories that you can use
    - `pip install pybibx`
    - Language: Python
 
-6. **[metaknowledge](https://github.com/UWNETLAB/metaknowledge)**
+9. **[metaknowledge](https://github.com/UWNETLAB/metaknowledge)**
    [![GitHub stars](https://img.shields.io/github/stars/UWNETLAB/metaknowledge?style=social)](https://github.com/UWNETLAB/metaknowledge)
    - Bibliometric research simplification
    - Reads meta-data from various sources
@@ -597,9 +1017,38 @@ This section highlights open-source tools and code repositories that you can use
    - `pip install metaknowledge`
    - Language: Python
 
+#### Meta-Analysis
+
+10. **[PythonMeta](https://github.com/Lightbridge-KS/PythonMeta)**
+    [![GitHub stars](https://img.shields.io/github/stars/Lightbridge-KS/PythonMeta?style=social)](https://github.com/Lightbridge-KS/PythonMeta)
+    - Comprehensive meta-analysis with effect sizes
+    - Supports OR, RR, RD for dichotomous data
+    - MD, SMD for continuous data
+    - Fixed/random effects models with MH/Peto/IV algorithms
+    - Forest and funnel plots
+    - `pip install PythonMeta`
+    - Web interface: https://www.pymeta.com/
+    - Language: Python
+
+11. **[PyMARE](https://github.com/neurostuff/PyMARE)**
+    [![GitHub stars](https://img.shields.io/github/stars/neurostuff/PyMARE?style=social)](https://github.com/neurostuff/PyMARE)
+    - Mixed-effects meta-regression
+    - Multiple variance estimation methods (ReML, ML, DL)
+    - `pip install pymare`
+    - Documentation: https://pymare.readthedocs.io/
+    - Language: Python
+
+12. **[NiMARE](https://github.com/neurostuff/NiMARE)**
+    [![GitHub stars](https://img.shields.io/github/stars/neurostuff/NiMARE?style=social)](https://github.com/neurostuff/NiMARE)
+    - Neuroimaging meta-analysis
+    - Coordinate- and image-based methods
+    - General meta-analysis tools included
+    - `pip install nimare`
+    - Language: Python
+
 #### Citation Snowballing
 
-7. **[snowballing](https://github.com/JoaoFelipe/snowballing)** ⭐
+13. **[snowballing](https://github.com/JoaoFelipe/snowballing)** ⭐
    [![GitHub stars](https://img.shields.io/github/stars/JoaoFelipe/snowballing?style=social)](https://github.com/JoaoFelipe/snowballing)
    - Literature snowballing tools
    - Chrome plugin for Google Scholar
@@ -609,9 +1058,35 @@ This section highlights open-source tools and code repositories that you can use
    - Documentation: https://joaofelipe.github.io/snowballing
    - Language: Python
 
+#### Citation Network & API Access
+
+14. **[semanticscholar](https://github.com/danielnsilva/semanticscholar)**
+    [![GitHub stars](https://img.shields.io/github/stars/danielnsilva/semanticscholar?style=social)](https://github.com/danielnsilva/semanticscholar)
+    - Unofficial Python client for Semantic Scholar API
+    - Typed responses, paginated navigation
+    - Async support
+    - `pip install semanticscholar`
+    - Language: Python
+
+15. **[PyS2](https://github.com/mirandrom/PyS2)**
+    [![GitHub stars](https://img.shields.io/github/stars/mirandrom/PyS2?style=social)](https://github.com/mirandrom/PyS2)
+    - Typed pydantic objects for Semantic Scholar
+    - Retries and rate limiting
+    - `pip install pys2`
+    - Language: Python
+
+16. **[PyAlex](https://github.com/J535D165/pyalex)**
+    [![GitHub stars](https://img.shields.io/github/stars/J535D165/pyalex?style=social)](https://github.com/J535D165/pyalex)
+    - Comprehensive OpenAlex support (Works, Authors, Sources, etc.)
+    - Polite pool access, retry mechanism
+    - Abstract parsing, CC0 data license
+    - Covers 200M+ works, free access
+    - `pip install pyalex`
+    - Language: Python
+
 #### PDF Data Extraction
 
-8. **[GROBID](https://github.com/kermitt2/grobid)** ⭐ Industry Standard
+17. **[GROBID](https://github.com/kermitt2/grobid)** ⭐ Industry Standard
    [![GitHub stars](https://img.shields.io/github/stars/kermitt2/grobid?style=social)](https://github.com/kermitt2/grobid)
    - Machine learning for PDF extraction
    - Focus on scientific publications
@@ -620,7 +1095,7 @@ This section highlights open-source tools and code repositories that you can use
    - 68 fine-grained structure labels
    - Language: Java/Python
 
-9. **[PDF-Extract-Kit](https://github.com/opendatalab/PDF-Extract-Kit)**
+18. **[PDF-Extract-Kit](https://github.com/opendatalab/PDF-Extract-Kit)**
    [![GitHub stars](https://img.shields.io/github/stars/opendatalab/PDF-Extract-Kit?style=social)](https://github.com/opendatalab/PDF-Extract-Kit)
    - High-quality content extraction
    - Layout detection, formula recognition
@@ -628,22 +1103,53 @@ This section highlights open-source tools and code repositories that you can use
    - Works on papers, textbooks, reports
    - Language: Python
 
-10. **[MinerU](https://github.com/opendatalab/MinerU)**
+19. **[MinerU](https://github.com/opendatalab/MinerU)**
     [![GitHub stars](https://img.shields.io/github/stars/opendatalab/MinerU?style=social)](https://github.com/opendatalab/MinerU)
     - Transforms PDFs to markdown/JSON
     - LLM-ready format
     - Machine-readable outputs
     - Language: Python
 
-11. **[PDFDataExtractor](https://github.com/cat-lemonade/PDFDataExtractor)**
+20. **[PDFDataExtractor](https://github.com/cat-lemonade/PDFDataExtractor)**
     [![GitHub stars](https://img.shields.io/github/stars/cat-lemonade/PDFDataExtractor?style=social)](https://github.com/cat-lemonade/PDFDataExtractor)
     - Semantic information extraction
     - Focused on scientific articles
     - Language: Python
 
+21. **[Marker](https://github.com/VikParuchuri/marker)**
+    [![GitHub stars](https://img.shields.io/github/stars/VikParuchuri/marker?style=social)](https://github.com/VikParuchuri/marker)
+    - Converts PDF to Markdown using Surya OCR
+    - Formula extraction (LaTeX)
+    - Text detection and layout analysis
+    - 90+ language support
+    - Language: Python
+
+22. **[Unstructured](https://github.com/Unstructured-IO/unstructured)**
+    [![GitHub stars](https://img.shields.io/github/stars/Unstructured-IO/unstructured?style=social)](https://github.com/Unstructured-IO/unstructured)
+    - ETL for ML tasks from PDFs
+    - Document parsing library
+    - Multiple format support
+    - `pip install unstructured`
+    - Language: Python
+
+23. **[Tesseract OCR](https://github.com/tesseract-ocr/tesseract)**
+    [![GitHub stars](https://img.shields.io/github/stars/tesseract-ocr/tesseract?style=social)](https://github.com/tesseract-ocr/tesseract)
+    - Open-source OCR from Google
+    - Supports 100+ languages
+    - `pip install pytesseract`
+    - Language: C++/Python
+
+24. **[PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)**
+    [![GitHub stars](https://img.shields.io/github/stars/PaddlePaddle/PaddleOCR?style=social)](https://github.com/PaddlePaddle/PaddleOCR)
+    - Handles 80+ languages
+    - Table recognition
+    - Excellent for Asian languages
+    - `pip install paddleocr`
+    - Language: Python
+
 #### Text Mining & NLP
 
-12. **[medaCy](https://github.com/NLPatVCU/medaCy)**
+25. **[medaCy](https://github.com/NLPatVCU/medaCy)**
     [![GitHub stars](https://img.shields.io/github/stars/NLPatVCU/medaCy?style=social)](https://github.com/NLPatVCU/medaCy)
     - Medical text mining framework
     - Built on spaCy
@@ -653,9 +1159,90 @@ This section highlights open-source tools and code repositories that you can use
 
 ### R Packages
 
+#### Search Strategy Development
+
+1. **[litsearchr](https://github.com/elizagrames/litsearchr)** ⭐ Highly Recommended
+   [![GitHub stars](https://img.shields.io/github/stars/elizagrames/litsearchr?style=social)](https://github.com/elizagrames/litsearchr)
+   - Revolutionizes search strategy development
+   - Quasi-automatic keyword extraction using text mining
+   - Co-occurrence networks for term relationships
+   - Interactive Shiny GUI available
+   - `install.packages("litsearchr")`
+   - Shiny app: https://elizagrames.shinyapps.io/litsearchr/
+   - Language: R
+
+2. **[searchAnalyzeR](https://cran.r-project.org/package=searchAnalyzeR)**
+   - Validates search strategies
+   - PRISMA-compliant reporting
+   - Precision-recall analysis
+   - Cross-database performance comparison
+   - PubMed API integration
+   - `install.packages("searchAnalyzeR")`
+   - Language: R
+
+#### Screening & Workflow Management
+
+3. **[metagear](https://github.com/cran/metagear)**
+   [![GitHub stars](https://img.shields.io/github/stars/cran/metagear?style=social)](https://github.com/cran/metagear)
+   - GUI for abstract/title screening
+   - Inter-reviewer reliability assessment
+   - PDF downloading capabilities
+   - PRISMA flow diagrams with multiple design layouts
+   - Data extraction from scatter plots and bar plots
+   - `install.packages("metagear")`
+   - Language: R
+
+4. **[revtools](https://revtools.net/)**
+   - Article screening for evidence synthesis
+   - Topic modeling for literature exploration
+   - Visual screening methods
+   - Document tagging
+   - `install.packages("revtools")`
+   - Website: https://revtools.net/
+   - Language: R
+
+#### Citation Tracking
+
+5. **[citationchaser](https://github.com/nealhaddaway/citationchaser)**
+   [![GitHub stars](https://img.shields.io/github/stars/nealhaddaway/citationchaser?style=social)](https://github.com/nealhaddaway/citationchaser)
+   - Forward and backward citation chasing
+   - Lens.org API integration
+   - Automated reference discovery
+   - RIS file output
+   - `install.packages("citationchaser")`
+   - Shiny app: https://estech.shinyapps.io/citationchaser/
+   - Published in Research Synthesis Methods 13(4):533-545 (2022)
+   - Language: R
+
+6. **[semscholar](https://github.com/njahn82/semscholar)**
+   [![GitHub stars](https://img.shields.io/github/stars/njahn82/semscholar?style=social)](https://github.com/njahn82/semscholar)
+   - R interface to Semantic Scholar API
+   - Author profiles and paper metadata
+   - Citations and references
+   - Zotero integration
+   - `remotes::install_github("njahn82/semscholar")`
+   - Language: R
+
+7. **[semanticscholar](https://github.com/KTH-Library/semanticscholar)** (KTH Library)
+   - Lightweight Semantic Scholar API access
+   - Author metrics (h-index, citation count)
+   - Paper metadata with TLDR
+   - API key support (100 requests/sec)
+   - `install.packages("semanticscholar")`
+   - Language: R
+
+8. **[openalexR](https://github.com/ropensci/openalexR)**
+   [![GitHub stars](https://img.shields.io/github/stars/ropensci/openalexR?style=social)](https://github.com/ropensci/openalexR)
+   - R interface to OpenAlex
+   - Polite pool support
+   - Premium API key compatibility
+   - 200M+ works, CC0 licensed
+   - `install.packages("openalexR")`
+   - Language: R
+
 #### Meta-Analysis
 
-1. **[metafor](https://github.com/wviechtb/metafor)** ⭐ Gold Standard
+9. **[metafor](https://github.com/wviechtb/metafor)** ⭐ Gold Standard
    [![GitHub stars](https://img.shields.io/github/stars/wviechtb/metafor?style=social)](https://github.com/wviechtb/metafor)
    - Comprehensive meta-analysis package
    - Equal/fixed/random/mixed-effects models
@@ -665,22 +1252,228 @@ This section highlights open-source tools and code repositories that you can use
    - `install.packages("metafor")`
    - Website: https://wviechtb.github.io/metafor/
 
-2. **[meta](https://github.com/guido-s/meta)**
-   [![GitHub stars](https://img.shields.io/github/stars/guido-s/meta?style=social)](https://github.com/guido-s/meta)
-   - User-friendly general package
-   - Standard meta-analysis methods
-   - Companion to "Meta-Analysis with R" book
-   - `install.packages("meta")`
+10. **[meta](https://github.com/guido-s/meta)**
+    [![GitHub stars](https://img.shields.io/github/stars/guido-s/meta?style=social)](https://github.com/guido-s/meta)
+    - Comprehensive meta-analysis package
+    - metagen(), metabin(), metacont(), metainc() functions
+    - Fixed/random effects, three-level meta-analysis
+    - GLMM, Hartung-Knapp method, trim-and-fill
+    - RevMan 5 imports
+    - `install.packages("meta")`
+    - Website: https://cran.r-project.org/package=meta
 
-3. **[dmetar](https://dmetar.protectlab.org/)**
-   - Companion to "Doing Meta-Analysis in R"
-   - Utility functions for meta/metafor
-   - Facilitates workflow
-   - `install.packages("dmetar")`
+11. **[metaplus](https://cran.r-project.org/package=metaplus)**
+    - Robust meta-analysis using t-distribution
+    - Mixture of normals for random effects
+    - Outlier detection via testOutliers() and outlierProbs()
+    - `install.packages("metaplus")`
+    - Language: R
+
+#### Network Meta-Analysis
+
+12. **[netmeta](https://github.com/guido-s/netmeta)** ⭐ Most Popular
+    [![GitHub stars](https://img.shields.io/github/stars/guido-s/netmeta?style=social)](https://github.com/guido-s/netmeta)
+    - Frequentist network meta-analysis
+    - 3,645 monthly downloads
+    - Graph-theoretic methods
+    - Component network meta-analysis
+    - Inconsistency assessment via netheat() and netsplit()
+    - `install.packages("netmeta")`
+    - Language: R
+
+13. **[gemtc](https://cran.r-project.org/package=gemtc)**
+    - Bayesian NMA via JAGS/OpenBUGS/WinBUGS
+    - Consistency and inconsistency models
+    - 1,781 monthly downloads
+    - `install.packages("gemtc")`
+    - Language: R
+
+14. **[BUGSnet](https://github.com/audrey-b/BUGSnet)**
+    [![GitHub stars](https://img.shields.io/github/stars/audrey-b/BUGSnet?style=social)](https://github.com/audrey-b/BUGSnet)
+    - PRISMA/ISPOR/NICE-DSU compliant outputs
+    - Bayesian NMA using JAGS
+    - League tables via league.table()
+    - SUCRA plots via sucra()
+    - `install.packages("BUGSnet")`
+    - Language: R
+
+15. **[multinma](https://cran.r-project.org/package=multinma)**
+    - Network meta-analysis and meta-regression
+    - Individual patient data (IPD) and aggregate data
+    - `install.packages("multinma")`
+    - Language: R
+
+16. **[pcnetmeta](https://cran.r-project.org/package=pcnetmeta)**
+    - Arm-based network meta-analysis
+    - Treatment-specific parameters
+    - Bayesian framework
+    - `install.packages("pcnetmeta")`
+    - Language: R
+
+17. **[bnma](https://cran.r-project.org/package=bnma)**
+    - Bayesian network meta-analysis
+    - Various model specifications
+    - `install.packages("bnma")`
+    - Language: R
+
+18. **[crossnma](https://cran.r-project.org/package=crossnma)**
+    - Cross-design and cross-format NMA
+    - Handles different study designs
+    - `install.packages("crossnma")`
+    - Language: R
+
+#### Bayesian Meta-Analysis
+
+19. **[brms](https://github.com/paul-buerkner/brms)**
+    [![GitHub stars](https://img.shields.io/github/stars/paul-buerkner/brms?style=social)](https://github.com/paul-buerkner/brms)
+    - Highly flexible Bayesian multilevel models
+    - Stan backend
+    - Meta-analysis as special case of hierarchical models
+    - Formula: y | se(se_y) ~ 1 + (1|study)
+    - `install.packages("brms")`
+    - Language: R
+
+20. **[bayesmeta](https://cran.r-project.org/package=bayesmeta)**
+    - Bayesian random-effects meta-analysis
+    - No MCMC (faster, reproducible)
+    - Shrinkage estimates and prediction intervals
+    - Flexible priors
+    - 919 monthly downloads
+    - `install.packages("bayesmeta")`
+    - Language: R
+
+21. **[MetaStan](https://cran.r-project.org/package=MetaStan)**
+    - Binomial-normal hierarchical models
+    - Weakly informative priors
+    - Using Stan
+    - `install.packages("MetaStan")`
+    - Language: R
+
+22. **[baggr](https://cran.r-project.org/package=baggr)**
+    - Bayesian meta-analysis using Stan
+    - Hierarchical models
+    - Graphical facilities
+    - `install.packages("baggr")`
+    - Language: R
+
+23. **[metaBMA](https://cran.r-project.org/package=metaBMA)**
+    - Bayesian model averaging
+    - Variety of priors
+    - Custom prior definition
+    - `install.packages("metaBMA")`
+    - Language: R
+
+#### Specialized Meta-Analysis Packages
+
+24. **[MAd](https://cran.r-project.org/package=MAd)**
+    - Meta-analysis of standardized mean differences
+    - Range of graphics
+    - `install.packages("MAd")`
+    - Language: R
+
+25. **[psychmeta](https://cran.r-project.org/package=psychmeta)**
+    - Hunter-Schmidt method for psychometric meta-analysis
+    - Reliability corrections
+    - `install.packages("psychmeta")`
+    - Language: R
+
+26. **[metap](https://cran.r-project.org/package=metap)**
+    - Meta-analysis of significance values
+    - Edgington, Fisher, Lancaster, Stouffer, Tippett, Wilkinson methods
+    - `install.packages("metap")`
+    - Language: R
+
+27. **[robumeta](https://cran.r-project.org/package=robumeta)**
+    - Robust variance estimation
+    - For dependent effect sizes
+    - `install.packages("robumeta")`
+    - Language: R
+
+28. **[POMADE](https://cran.r-project.org/package=POMADE)**
+    - Power analysis for meta-analysis
+    - Dependent effect sizes
+    - `install.packages("POMADE")`
+    - Language: R
+
+29. **[metamisc](https://cran.r-project.org/package=metamisc)**
+    - Diagnostic and prognostic studies
+    - Bayesian methods with suggested priors
+    - `install.packages("metamisc")`
+    - Language: R
+
+30. **[dosresmeta](https://cran.r-project.org/package=dosresmeta)**
+    - Dose-response meta-analysis
+    - `install.packages("dosresmeta")`
+    - Language: R
+
+31. **[metamedian](https://cran.r-project.org/package=metamedian)**
+    - Meta-analyzes studies reporting medians
+    - `install.packages("metamedian")`
+    - Language: R
+
+32. **[mixmeta](https://cran.r-project.org/package=mixmeta)**
+    - Multivariate and multilevel meta-analysis
+    - `install.packages("mixmeta")`
+    - Language: R
+
+33. **[mvmeta](https://cran.r-project.org/package=mvmeta)**
+    - Multivariate meta-analysis
+    - `install.packages("mvmeta")`
+    - Language: R
+
+#### Visualization Packages
+
+34. **[robvis](https://github.com/mcguinlu/robvis)** ⭐ Essential
+    [![GitHub stars](https://img.shields.io/github/stars/mcguinlu/robvis?style=social)](https://github.com/mcguinlu/robvis)
+    - Risk-Of-Bias VISualization
+    - Publication-quality figures for RoB 2, ROBINS-I, ROBINS-E, QUADAS-2, QUIPS
+    - Colorblind-friendly schemes
+    - Over 1,500 academic citations
+    - `devtools::install_github("mcguinlu/robvis")`
+    - Web app: https://mcguinlu.shinyapps.io/robvis (no R required)
+    - Language: R
+
+35. **[forestplot](https://cran.r-project.org/package=forestplot)**
+    - Highly customizable forest plots
+    - Publication-quality graphics
+    - `install.packages("forestplot")`
+    - Language: R
+
+36. **[forestploter](https://cran.r-project.org/package=forestploter)**
+    - Advanced forest plots
+    - Flexible layouts
+    - `install.packages("forestploter")`
+    - Language: R
+
+37. **[metaviz](https://cran.r-project.org/package=metaviz)**
+    - Advanced visualization for meta-analysis
+    - Influence plots and cumulative plots
+    - `install.packages("metaviz")`
+    - Language: R
+
+38. **[viscomp](https://github.com/georgiosseitidis/viscomp)**
+    [![GitHub stars](https://img.shields.io/github/stars/georgiosseitidis/viscomp?style=social)](https://github.com/georgiosseitidis/viscomp)
+    - Visualizes multi-component interventions in NMA
+    - Heat plots, violin plots, waterfall plots
+    - Network graphs
+    - Language: R
+
+39. **[dmetar](https://dmetar.protectlab.org/)**
+    - Companion to "Doing Meta-Analysis in R"
+    - Utility functions for meta/metafor
+    - Heterogeneity tests and utilities
+    - `install.packages("dmetar")`
+    - Language: R
+
+40. **[metaDigitise](https://cran.r-project.org/package=metaDigitise)**
+    - Extracts data from published figures
+    - Graphical interface
+    - `install.packages("metaDigitise")`
+    - Language: R
 
 #### Bibliometric Analysis
 
-4. **[bibliometrix](https://github.com/massimoaria/bibliometrix)** ⭐
+41. **[bibliometrix](https://github.com/massimoaria/bibliometrix)** ⭐
    [![GitHub stars](https://img.shields.io/github/stars/massimoaria/bibliometrix?style=social)](https://github.com/massimoaria/bibliometrix)
    - Comprehensive science mapping
    - Citation analysis, co-citation, coupling
@@ -692,7 +1485,7 @@ This section highlights open-source tools and code repositories that you can use
 
 #### PRISMA Flow Diagrams
 
-5. **[PRISMA2020](https://github.com/prisma-flowdiagram/PRISMA2020)** ⭐ Official
+42. **[PRISMA2020](https://github.com/prisma-flowdiagram/PRISMA2020)** ⭐ Official
    [![GitHub stars](https://img.shields.io/github/stars/prisma-flowdiagram/PRISMA2020?style=social)](https://github.com/prisma-flowdiagram/PRISMA2020)
    - PRISMA 2020-compliant diagrams
    - Interactive HTML output
@@ -701,7 +1494,7 @@ This section highlights open-source tools and code repositories that you can use
    - `install.packages("PRISMA2020")`
    - Website: https://prisma-flowdiagram.github.io/PRISMA2020/
 
-6. **[livingPRISMAflow](https://github.com/nealhaddaway/livingPRISMAflow)**
+43. **[livingPRISMAflow](https://github.com/nealhaddaway/livingPRISMAflow)**
    [![GitHub stars](https://img.shields.io/github/stars/nealhaddaway/livingPRISMAflow?style=social)](https://github.com/nealhaddaway/livingPRISMAflow)
    - Living systematic review diagrams
    - PRISMA checklist conformance
@@ -709,7 +1502,7 @@ This section highlights open-source tools and code repositories that you can use
 
 #### Deduplication
 
-7. **[ASySD](https://github.com/camaradesuk/ASySD)** ⭐
+44. **[ASySD](https://github.com/camaradesuk/ASySD)** ⭐
    [![GitHub stars](https://img.shields.io/github/stars/camaradesuk/ASySD?style=social)](https://github.com/camaradesuk/ASySD)
    - Automated citation deduplication
    - R package + Shiny app
@@ -780,14 +1573,69 @@ Explore curated collections of repositories:
 python -m venv slr-env
 source slr-env/bin/activate  # On Windows: slr-env\Scripts\activate
 
-# Install key tools
-pip install asreview litstudy pybibx metaknowledge
+# Screening & AI-powered tools
+pip install asreview lattereview systematic-reviewpy
+
+# Bibliometrics & literature analysis
+pip install litstudy pybibx metaknowledge
+
+# Meta-analysis
+pip install PythonMeta pymare nimare
+
+# API access for citation tracking
+pip install semanticscholar pys2 pyalex
+
+# PDF extraction & OCR
+pip install marker unstructured pytesseract paddleocr
+
+# All-in-one installation
+pip install asreview lattereview systematic-reviewpy litstudy pybibx metaknowledge PythonMeta pymare semanticscholar pyalex
 ```
 
 **R Environment:**
 ```r
-# Install key packages
-install.packages(c("metafor", "meta", "bibliometrix", "PRISMA2020", "ASySD"))
+# Search strategy development
+install.packages(c("litsearchr", "searchAnalyzeR"))
+
+# Screening & workflow
+install.packages(c("metagear", "revtools"))
+
+# Citation tracking
+install.packages(c("citationchaser", "openalexR"))
+
+# Meta-analysis core
+install.packages(c("metafor", "meta", "metaplus"))
+
+# Network meta-analysis
+install.packages(c("netmeta", "gemtc", "BUGSnet", "multinma", "pcnetmeta", "bnma", "crossnma"))
+
+# Bayesian meta-analysis
+install.packages(c("brms", "bayesmeta", "MetaStan", "baggr", "metaBMA"))
+
+# Specialized meta-analysis
+install.packages(c("MAd", "psychmeta", "metap", "robumeta", "POMADE", "metamisc",
+                   "dosresmeta", "metamedian", "mixmeta", "mvmeta"))
+
+# Visualization
+devtools::install_github("mcguinlu/robvis")
+install.packages(c("forestplot", "forestploter", "metaviz", "dmetar", "metaDigitise"))
+
+# Bibliometrics & PRISMA
+install.packages(c("bibliometrix", "PRISMA2020"))
+
+# Deduplication
+install.packages("ASySD")
+
+# All-in-one installation (core packages)
+install.packages(c("litsearchr", "metagear", "revtools", "citationchaser", "openalexR",
+                   "metafor", "meta", "netmeta", "brms", "bibliometrix", "PRISMA2020",
+                   "ASySD", "forestplot", "metaviz"))
+```
+
+**Node.js Tools:**
+```bash
+# Search translation
+npm install sra-polyglot
 ```
 
 ### Contributing to Open Source
@@ -826,18 +1674,105 @@ Many of these tools welcome contributions:
 
 ## Learning Resources
 
-### Comprehensive Guides:
+### Comprehensive Methodology Guides:
 
-1. **[Cochrane Handbook for Systematic Reviews](https://training.cochrane.org/handbook)** ⭐ Essential
-   - Version 6.4 (2023)
-   - Gold standard methodology
+1. **[Cochrane Handbook for Systematic Reviews of Interventions](https://training.cochrane.org/handbook)** ⭐ Gold Standard
+   - Version 6.5 (current as of 2024)
    - Free online access
-   - Chapter-by-chapter guidance
+   - Key chapters:
+     - Chapter 2: Determining scope and questions
+     - Chapter 3: Defining eligibility criteria (PICO)
+     - Chapter 9: Summarizing study characteristics
+     - Chapter 17: Intervention complexity
+   - Updated continuously with Technical Supplement
 
-2. **[PRISMA Resources](https://www.prisma-statement.org/)** ⭐ Essential
-   - Checklists and flow diagrams
-   - Examples and tutorials
-   - All extensions documented
+2. **[PRISMA 2020 Statement](https://www.prisma-statement.org/prisma-2020)** ⭐ Essential
+   - Updated 27-item checklist
+   - Flow diagram templates
+   - Expanded guidance
+   - Key paper (Page et al. 2021): https://pubmed.ncbi.nlm.nih.gov/33782057/
+   - Explanation & Elaboration: https://pubmed.ncbi.nlm.nih.gov/33781993/
+
+3. **PRISMA Extensions:**
+   - **[PRISMA-P (Protocols)](https://www.prisma-statement.org/protocols)** - 17 items
+     - Systematic Reviews journal: https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/2046-4053-4-1
+     - Item 6 guidance on eligibility criteria
+     - PubMed: https://pmc.ncbi.nlm.nih.gov/articles/PMC4320440/
+   - **[PRISMA-ScR (Scoping Reviews)](https://www.prisma-statement.org/scoping)** - 20 items
+     - PubMed: https://pubmed.ncbi.nlm.nih.gov/30178033/
+   - **[PRISMA-S (Search Reporting)](https://pubmed.ncbi.nlm.nih.gov/33499930/)** - 16 items
+
+4. **[JBI Manual for Evidence Synthesis](https://jbi-global-wiki.refined.site/space/MANUAL)** ⭐ Comprehensive
+   - Covers 10 review types:
+     - Effectiveness reviews
+     - Qualitative evidence synthesis
+     - Mixed methods synthesis
+     - Scoping reviews
+     - Economic evaluations
+     - Prevalence and incidence reviews
+     - Diagnostic test accuracy
+     - Etiology and risk reviews
+     - Umbrella reviews
+     - Text and opinion reviews
+   - Editors: Aromataris & Jordan (2024)
+   - DOI: 10.46658/JBIMES-24-01
+   - Scoping review guidance: https://www.researchgate.net/publication/319713049_2017_Guidance_for_the_Conduct_of_JBI_Scoping_Reviews
+
+5. **[Campbell Collaboration Standards](https://www.campbellcollaboration.org/methods/standards/)**
+   - Based on MECCIR and PRISMA-2020
+   - 35 items across 7 sections
+   - Social sciences, education, criminal justice focus
+   - Policies version 1.8: https://www.campbellcollaboration.org/wp-content/uploads/2024/11/Campbell-Policies-and-Guidelines-_May3-2022.docx.pdf
+   - Author guidelines: https://onlinelibrary.wiley.com/page/journal/18911803/homepage/author-guidelines
+
+6. **[Centre for Reviews and Dissemination (CRD) Guidance](https://www.york.ac.uk/media/crd/Systematic_Reviews.pdf)** ⭐ Comprehensive
+   - 300+ page guide covering all stages
+   - From protocol to dissemination
+   - Includes: effectiveness, tests, qualitative research, economic evaluations
+   - Homepage: https://www.york.ac.uk/crd/guidance/
+
+### University Library Guides:
+
+**Comprehensive Multi-Page Guides:**
+
+1. **[Cornell University - Evidence Synthesis](https://guides.library.cornell.edu/evidence-synthesis)**
+   - All 12 steps from protocol development through synthesis
+   - Framework comparisons (PICO vs SPIDER vs PEO)
+   - Reporting standards
+
+2. **[UNC Chapel Hill - Systematic Reviews](https://guides.lib.unc.edu/systematic-reviews)**
+   - Health Sciences Library
+   - AI/automation tools
+   - Predictive screening
+   - Search strategies
+   - PICO frameworks: https://guides.lib.unc.edu/pico/frameworks
+
+3. **[University College London (UCL)](https://library-guides.ucl.ac.uk/systematic-reviews)**
+   - Collaboration with EPPI-Centre
+   - Formulating questions
+   - Searching databases
+   - Appraising studies
+   - Synthesis methods
+
+4. **[UCLA Library](https://guides.library.ucla.edu/systematicreviews)**
+   - Methodology requirements
+   - Decision trees
+   - Primer resources
+
+5. **[University of Cambridge](https://libguides.cam.ac.uk/systematic-reviews)**
+   - Medical Library guide
+   - Stages visualization
+   - Timeline guidance
+   - Critical appraisal
+
+**Additional University Guides:**
+- University of Michigan: https://guides.lib.umich.edu/sysreviews/
+- Washington University: https://libguides.wustl.edu/brownschoollibrarysystematicreviews/guidelines
+- University of Minnesota: https://www.lib.umn.edu/services/systematic-reviews
+- University of Denver: https://libguides.du.edu/systematic/scoping
+- NYU: https://guides.nyu.edu/c.php?g=277003&p=7844931
+- Emory: https://guides.libraries.emory.edu/SRs/reporting_prisma
+- University of Cincinnati: https://guides.libraries.uc.edu/ReviewAssistance
 
 ### Online Courses:
 
@@ -863,6 +1798,278 @@ Many of these tools welcome contributions:
 - **[r/AskAcademia](https://www.reddit.com/r/AskAcademia/)**
 - **[ResearchGate](https://www.researchgate.net/)** - Q&A on systematic reviews
 - **[Zotero Forums](https://forums.zotero.org/)**
+
+---
+
+## Specialized Review Types & Methodologies
+
+### Living Systematic Reviews
+
+**What are Living Systematic Reviews?**
+- Continuously updated systematic reviews
+- Evidence updated as new studies emerge
+- Daily or regular automated searches
+- Critical for rapidly evolving fields
+
+**Platforms & Tools:**
+
+1. **[L·OVE (Living OVerview of Evidence)](https://iloveevidence.com/)** ⭐ Largest Platform
+   - Maps and organizes ~300,000 systematic reviews
+   - Epistemonikos database
+   - AI algorithms and expert networks
+   - Daily evidence updates
+   - PICO format organization
+   - Notifications for new evidence
+   - Customized reports
+
+2. **[LIvE (Living Interactive Evidence Synthesis)](https://adjrcc.living-evidence.com/)**
+   - Living Interactive Systematic Reviews (LISRs)
+   - 5 major components: automated search, scanner, extractor, analyzer, tabulator
+   - Three pathways: conventional, semi-automated human-in-the-loop, AI-powered
+
+3. **[Pitts.ai](https://pitts.ai/)**
+   - Web application for living systematic reviews
+   - Network meta-analysis support
+   - AI-driven data extraction from full-text articles
+   - Mission: living systematic reviews in every disease
+
+4. **[Cochrane Living Evidence Network](https://community.cochrane.org/review-development/resources/living-systematic-reviews)**
+   - Guidance documents
+   - Tech enablers: Covidence, MAGICapp, Screen4Me, RCT-classifier, RevMan Replicant, Systematic Review Accelerator
+   - Updated practical guidance (December 2019)
+
+5. **[DistillerSR](https://www.distillersr.com/resources/systematic-literature-reviews/what-is-a-living-systematic-review)**
+   - Supports living review methodology
+   - Screening and data extraction tools
+   - PRISMA checklist integration
+
+**Key Guidance:**
+- Elliott JH et al. "Living systematic review: 1. Introduction—the why, what, when, and how"
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/28912002/
+  - Full text: https://www.jclinepi.com/article/S0895-4356(17)30636-4/fulltext
+
+### Rapid Review Methodologies
+
+**What are Rapid Reviews?**
+- Accelerated systematic reviews (weeks to months vs. 12-18 months)
+- Balance timeliness with rigor
+- Common shortcuts: limited databases, single screener, no quality assessment
+- Used for time-sensitive policy decisions
+
+**Resources & Guidance:**
+
+1. **[NCCMT Rapid Review Guidebook](https://www.nccmt.ca/tools/rapid-review-guidebook)** ⭐ Essential
+   - Comprehensive step-by-step guide
+   - By Dobbins (2017)
+   - PDF: https://www.nccmt.ca/uploads/media/media/0001/01/a816af720e4d587e13da6bb307df8c907a5dff9a.pdf
+   - Covers all stages from protocol to reporting
+
+2. **[Cochrane Rapid Reviews Interim Guidance](https://methods.cochrane.org/sites/methods.cochrane.org.rapidreviews/files/uploads/cochrane_rr_-_guidance-23mar2020-final.pdf)**
+   - March 2020 guidance
+   - Cochrane Rapid Reviews Methods Group
+   - Specific methodological standards
+
+3. **[WHO EMRO Training Package](https://www.emro.who.int/evidence-data-to-policy/training-package/rapid-reviews.html)**
+   - Comprehensive training materials
+   - Webinars available
+   - Ottawa Hospital Research Institute experiences
+
+**Methodological Papers:**
+- "Paper 2: Performing rapid reviews" - https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-022-02011-5
+- "Rapid reviews methods series" - https://pmc.ncbi.nlm.nih.gov/articles/PMC10715469/
+
+**University Guides:**
+- VCU: https://guides.library.vcu.edu/rapidreview
+- University of Melbourne: https://unimelb.libguides.com/whichreview/rapidreview
+- James Cook University: https://libguides.jcu.edu.au/rapidreview
+- University of Toronto: https://guides.library.utoronto.ca/c.php?g=713309&p=5083943
+
+### Scoping Review Tools & Frameworks
+
+**What are Scoping Reviews?**
+- Map available evidence in a field
+- Identify key concepts, gaps, and types of evidence
+- Broader than systematic reviews
+- Don't typically assess quality
+
+**Frameworks:**
+
+1. **[Arksey & O'Malley Framework (2005)](https://www.tandfonline.com/doi/full/10.1080/1364557032000119616)** - Original
+   - Six-stage iterative process
+   - Identifying research questions → identifying studies → study selection → charting data → collating/summarizing/reporting → optional consultation
+
+2. **Enhanced Frameworks:**
+   - Levac et al. (2010): https://implementationscience.biomedcentral.com/articles/10.1186/1748-5908-5-69
+   - Pham et al. (2014): https://onlinelibrary.wiley.com/doi/10.1002/jrsm.1123
+
+3. **[JBI Scoping Review Methodology](https://jbi-global-wiki.refined.site/space/MANUAL/355862497/10.+Scoping+reviews)** ⭐ Current Standard
+   - Updated 2020 guidance (Peters et al.)
+   - PubMed: https://pubmed.ncbi.nlm.nih.gov/33038124/
+   - Network resources: https://jbi.global/scoping-review-network
+   - Protocol template: https://jbi.global/sites/default/files/2024-04/JBI_Protocol_Template_Scoping_Reviews_2024.docx
+
+4. **[PRISMA-ScR](https://www.prisma-statement.org/scoping)** - Reporting Standard
+   - 20 essential + 2 optional items
+   - EQUATOR: https://www.equator-network.org/reporting-guidelines/prisma-scr/
+   - Developed by 24-member expert panel (Tricco et al., 2018)
+   - PubMed: https://pubmed.ncbi.nlm.nih.gov/30178033/
+   - Fillable checklist and flow diagram template
+
+**University Guides:**
+- University of South Australia: https://guides.library.unisa.edu.au/ScopingReviews/ReportSearchResults
+- Knowledge Translation Program: https://knowledgetranslation.net/portfolios/the-prisma-scr-prisma-extension-for-scoping-reviews/
+
+### Umbrella Review Tools
+
+**What are Umbrella Reviews?**
+- Reviews of systematic reviews
+- Synthesize evidence from multiple systematic reviews
+- High-level evidence synthesis
+- Also called "overview of reviews" or "meta-reviews"
+
+**Quality Assessment Tools:**
+
+1. **[AMSTAR 2](https://amstar.ca/)** ⭐ Most Used (~80% of umbrella reviews)
+   - 16-item critical appraisal tool
+   - See Quality Assessment section above
+
+2. **[ROBIS](https://www.bristol.ac.uk/population-health-sciences/projects/robis/)**
+   - Risk Of Bias In Systematic reviews
+   - Three-phase instrument
+   - Focuses on bias (complementary to AMSTAR 2)
+
+3. **JBI Critical Appraisal Checklist**
+   - Systematic review checklist for umbrella reviews
+   - Recommended by JBI (not validated)
+
+**Guidance Documents:**
+- "Umbrella reviews: a methodological guide" (European Journal of Cardiovascular Nursing, 2025)
+  - https://academic.oup.com/eurjcn/article/24/6/996/7974731
+- "A step-by-step guide for conducting an umbrella review" (Tropical Medicine and Health, 2025)
+  - https://tropmedhealth.biomedcentral.com/articles/10.1186/s41182-025-00764-y
+- Methodological approaches analyzing 99 umbrella reviews
+  - https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0269009
+
+**Overlap Management:**
+- **GROOVE** (Graphical representation of overlap for overviews)
+- **CCA index** (Corrected covered area) for managing primary study overlap
+
+### Realist Review Frameworks
+
+**What are Realist Reviews?**
+- Theory-driven synthesis
+- Explains "what works, for whom, in what circumstances, and why"
+- Uses Context-Mechanism-Outcome (CMO) configurations
+- Based on Pawson and Tilley's realist evaluation
+
+**RAMESES Standards:**
+
+1. **[RAMESES Project](http://ramesesproject.org/)** ⭐ Gold Standard
+   - Realist And Meta-narrative Evidence Syntheses – Evolving Standards
+   - Funded by UK NIHR
+   - Standards and training: https://www.ramesesproject.org/Standards_and_Training_materials.php
+
+2. **[RAMESES I - Realist Syntheses](https://bmcmedicine.biomedcentral.com/articles/10.1186/1741-7015-11-21)**
+   - 19 publication standards
+   - BMC Medicine 2013
+   - PubMed: https://pubmed.ncbi.nlm.nih.gov/23360677/
+   - EQUATOR Network: https://www.equator-network.org/reporting-guidelines/rameses-publication-standards-realist-syntheses/
+   - Developed through Delphi process (37-member panel, 90% response rate)
+
+3. **[RAMESES II - Realist Evaluations](https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-016-0643-1)**
+   - Reporting standards for realist evaluations
+   - BMC Medicine 2016
+   - PubMed: https://pubmed.ncbi.nlm.nih.gov/27342217/
+   - EQUATOR Network: https://www.equator-network.org/reporting-guidelines/rameses-ii-reporting-standards-for-realist-evaluations/
+   - International Delphi panel with maximum variety expert sample
+
+**Training & Resources:**
+- Free training materials for researchers, evaluators, participants
+- Patient and public involvement materials
+- Full project reports:
+  - RAMESES I: https://www.ncbi.nlm.nih.gov/books/NBK260013/
+  - RAMESES II: https://pubmed.ncbi.nlm.nih.gov/29072890/
+- JISCMail list: www.jiscmail.ac.uk/RAMESES
+
+### Protocol Registration Platforms
+
+**Why Register?**
+- Transparency and reduces publication bias
+- Prevents duplication of effort
+- Some journals require pre-registration
+
+**Platforms:**
+
+1. **[OSF (Open Science Framework) Registries](https://osf.io/)** ⭐ Most Flexible
+   - Free registration
+   - Generalized Systematic Review Registration template: https://osf.io/by27q/
+   - No formal editorial review
+   - Version tracking, DOIs, immediate publication
+   - Center for Open Science announcement: https://www.cos.io/blog/generalized-systematic-review-template-joins-osf-registries
+
+2. **[INPLASY](https://inplasy.com/)** - Specialized SLR Registry
+   - Launched March 2020
+   - Accepts: systematic reviews, scoping reviews, meta-analyses, umbrella reviews, rapid reviews, methodological reviews, meta-research
+   - INPLASY unique identifiers + DOIs
+   - ORCID automatic updates
+   - 94%+ protocols published within 24 hours
+   - Over 4,658 protocols (as of March 2023)
+   - Registration fee
+   - Analysis: https://pubmed.ncbi.nlm.nih.gov/37588882/
+
+3. **[protocols.io](https://www.protocols.io/)**
+   - Generic protocol registration
+   - Example: https://www.protocols.io/view/systematic-review-protocol-ha2sb2gef.html
+   - Free of charge, no formal assessment
+   - Version tracking, DOIs provided
+
+4. **[Research Registry](https://www.researchregistry.com/)**
+   - Systematic review/meta-analysis registry
+   - Immediate visibility
+   - Registration fee, DOIs provided
+
+5. **[PROSPERO](https://www.crd.york.ac.uk/prospero/)** - Health Sciences
+   - International registry (mentioned in Planning & Protocol section)
+   - Required for many health journals
+   - Free but can have long approval times
+
+**Comparison Resource:**
+- "Where to prospectively register a systematic review"
+  - Systematic Reviews journal: https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-021-01877-1
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/34998432/
+  - Compares PROSPERO, Research Registry, INPLASY, OSF Registries, protocols.io
+
+### Qualitative Synthesis Methods
+
+**Common Approaches:**
+
+1. **Meta-ethnography (Noblit & Hare 1988)** - Most Common
+   - 7-stage approach
+   - Reciprocal translation and line-of-argument synthesis
+   - Third-order interpretations beyond original studies
+   - **Best for**: Developing analytical findings, lived experiences research
+
+2. **Thematic synthesis (Thomas & Harden 2008)**
+   - Combines meta-ethnography and grounded theory
+   - Line-by-line coding → descriptive themes → analytical themes
+   - **Best for**: Intervention need, appropriateness, acceptability questions
+
+3. **Framework synthesis**
+   - Uses a priori frameworks to structure synthesis
+   - Data extraction into predetermined frameworks
+   - Modified iteratively
+   - **Best for**: Theory-driven reviews, policy questions with clear structure
+
+4. **Meta-aggregation**
+   - JBI approach
+   - Assembling findings through categorization
+   - Credibility ratings
+   - **Best for**: Straightforward evidence aggregation
+
+5. **Critical Interpretive Synthesis (CIS)**
+   - Iterative approach problematizing literature
+   - Elastic terminology, multi-disciplinary teams
+   - **Best for**: Broad review questions, generating theory, cross-disciplinary topics
 
 ---
 
