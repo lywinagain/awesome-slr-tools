@@ -4,8 +4,12 @@ A comprehensive collection of tools, resources, and tutorials for conducting sys
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+> **💡 New to Systematic Literature Reviews?** Start with the [Quick Start Guide](#-quick-start-guide) below!
+
 ## Table of Contents
 
+- [🚀 Quick Start Guide](#-quick-start-guide)
+- [📊 Recommended Workflow](#-recommended-workflow)
 - [What is Systematic Literature Review?](#what-is-systematic-literature-review)
 - [Key Journals & Publications](#key-journals--publications)
 - [Planning & Protocol](#planning--protocol)
@@ -23,6 +27,63 @@ A comprehensive collection of tools, resources, and tutorials for conducting sys
 - [Open Source Tools & GitHub Repositories](#open-source-tools--github-repositories)
 - [Datasets & Benchmarks](#datasets--benchmarks)
 - [Learning Resources](#learning-resources)
+
+---
+
+## 🚀 Quick Start Guide
+
+**Choose your path based on your needs:**
+
+### For Beginners (Just Starting)
+1. **Learn the basics**: Read [Systematic Literature Review: Easy Guide](https://www.languageonthemove.com/systematic-literature-review-easy-guide/)
+2. **Follow standards**: Download [PRISMA 2020 Checklist](https://www.prisma-statement.org/)
+3. **Start simple**: Use [Rayyan](https://www.rayyan.ai/) (free) or [Covidence](https://www.covidence.org/) (free trial)
+4. **Manage references**: Install [Zotero](https://www.zotero.org/) (free, open-source)
+
+### For Developers/Programmers
+1. **Install Python tools**: `pip install asreview litstudy`
+2. **Install R packages**: `install.packages(c("metafor", "bibliometrix", "PRISMA2020"))`
+3. **Explore GitHub**: Browse [systematic-review topic](https://github.com/topics/systematic-review)
+4. **Try notebooks**: Use [Jupyter Guide](https://github.com/jupyter-guide/jupyter-guide)
+
+### For Health/Medical Researchers
+1. **Search**: [PubMed](https://pubmed.ncbi.nlm.nih.gov/) + [Cochrane Library](https://www.cochranelibrary.com/)
+2. **Screen**: [ASReview](https://asreview.nl/) or [Rayyan](https://www.rayyan.ai/)
+3. **Quality**: [Cochrane RoB 2 Tool](https://www.riskofbias.info/)
+4. **Analyze**: [RevMan](https://revman.cochrane.org/) (free Cochrane tool)
+
+### For Engineering/CS Researchers
+1. **Search**: [IEEE Xplore](https://ieeexplore.ieee.org/) + [ACM DL](https://dl.acm.org/) + [Scopus](https://www.scopus.com/)
+2. **Visualize**: [VOSviewer](https://www.vosviewer.com/) for citation networks
+3. **AI Help**: [Elicit](https://elicit.com/) or [Consensus](https://consensus.app/)
+4. **Publish in**: [IEEE COMST](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9739) or [ACM CSUR](https://dl.acm.org/journal/csur)
+
+---
+
+## 📊 Recommended Workflow
+
+**Step-by-step process with tool recommendations:**
+
+| Phase | What to Do | Free Tools | Paid Tools |
+|-------|------------|------------|------------|
+| **1. Planning** | Define question (PICO), write protocol | [PRISMA-P](https://www.prisma-statement.org/protocols), [PROSPERO](https://www.crd.york.ac.uk/prospero/) | - |
+| **2. Search** | Search multiple databases | [PubMed](https://pubmed.ncbi.nlm.nih.gov/), [Google Scholar](https://scholar.google.com/), [Semantic Scholar](https://www.semanticscholar.org/) | [Scopus](https://www.scopus.com/), [Web of Science](https://www.webofscience.com/) |
+| **3. Deduplication** | Remove duplicate records | [ASySD](https://camarades.shinyapps.io/ASySD/), [Zotero](https://www.zotero.org/) | [EndNote](https://endnote.com/), [Covidence](https://www.covidence.org/) |
+| **4. Screening** | Title/abstract screening | [ASReview](https://asreview.nl/), [Rayyan](https://www.rayyan.ai/) | [Covidence](https://www.covidence.org/), [DistillerSR](https://www.distillersr.com/) |
+| **5. Full-text Review** | Read and select studies | [Rayyan](https://www.rayyan.ai/), [Zotero](https://www.zotero.org/) | [Covidence](https://www.covidence.org/) |
+| **6. Data Extraction** | Extract study data | [Covidence](https://www.covidence.org/) (trial), Google Sheets | [DistillerSR](https://www.distillersr.com/), [NVivo](https://www.qsrinternational.com/) |
+| **7. Quality Assessment** | Assess risk of bias | [JBI Tools](https://jbi.global/critical-appraisal-tools), [RoB 2](https://www.riskofbias.info/) | - |
+| **8. Analysis** | Meta-analysis/synthesis | [RevMan](https://revman.cochrane.org/), [R metafor](https://www.metafor-project.org/) | [Comprehensive Meta-Analysis](https://www.meta-analysis.com/) |
+| **9. Visualization** | Create figures | [PRISMA2020 R package](https://github.com/prisma-flowdiagram/PRISMA2020), [VOSviewer](https://www.vosviewer.com/) | [Tableau](https://www.tableau.com/) |
+| **10. Writing** | Write manuscript | [Overleaf](https://www.overleaf.com/), [Google Docs](https://docs.google.com/) | [Microsoft Word](https://www.microsoft.com/microsoft-365/word) |
+
+**💰 Budget-Friendly Full Workflow:**
+- All steps: **Rayyan + Zotero + RevMan + R (metafor) + Overleaf** = $0
+- Everything is free and open-source!
+
+**🚀 Premium Workflow:**
+- All steps: **Covidence + EndNote + Comprehensive Meta-Analysis + NVivo** ≈ $500-1500/year
+- Professional features, support, and integrations
 
 ---
 
@@ -132,6 +193,8 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 
 ## Study Management
 
+> **🎯 Quick Pick:** Free users → [Rayyan](https://www.rayyan.ai/) | Budget available → [Covidence](https://www.covidence.org/)
+
 ### Comprehensive Platforms:
 
 1. **[Covidence](https://www.covidence.org/)** ⭐ Recommended
@@ -162,6 +225,15 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 ---
 
 ## Screening & Selection
+
+> **🎯 Quick Comparison:**
+>
+> | Tool | Cost | Best Feature | Workload Reduction |
+> |------|------|--------------|-------------------|
+> | [ASReview](https://asreview.nl/) | Free | AI active learning | Up to 95% |
+> | [Rayyan](https://www.rayyan.ai/) | Free | Collaborative screening | Good |
+> | [Abstrackr](http://abstrackr.cebm.brown.edu/) | Free | Semi-automated | ~67% |
+> | [Covidence](https://www.covidence.org/) | Paid | Full workflow | Good |
 
 ### AI-Powered Screening Tools:
 
@@ -250,6 +322,8 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 ---
 
 ## Analysis & Synthesis
+
+> **🎯 Quick Pick:** Free → [RevMan](https://revman.cochrane.org/) or [R metafor](https://www.metafor-project.org/) | Easy to use → [CMA](https://www.meta-analysis.com/) ($295/year)
 
 ### Meta-Analysis Software:
 
@@ -351,6 +425,8 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 
 ## Reference Management
 
+> **🎯 Quick Pick:** Most users → [Zotero](https://www.zotero.org/) (free) | Large SLRs (5000+ refs) → [EndNote](https://endnote.com/)
+
 ### Top Reference Managers:
 
 1. **[Zotero](https://www.zotero.org/)** ⭐ Free & Open Source
@@ -410,6 +486,8 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 
 ## AI-Powered Tools
 
+> **🎯 Quick Pick:** Start with [Elicit](https://elicit.com/) + [ResearchRabbit](https://www.researchrabbit.ai/) (both have free tiers)
+
 ### AI Research Assistants:
 
 1. **[Elicit](https://elicit.com/)** ⭐ Highly Recommended
@@ -452,6 +530,11 @@ A **Systematic Literature Review (SLR)** is a rigorous and comprehensive method 
 ---
 
 ## Open Source Tools & GitHub Repositories
+
+> **🎯 Quick Picks:**
+> **Python:** `pip install asreview litstudy` → Screening + Analysis
+> **R:** `install.packages(c("metafor", "bibliometrix"))` → Meta-analysis + Bibliometrics
+> **PDF Extraction:** [GROBID](https://github.com/kermitt2/grobid) (3500+ stars)
 
 This section highlights open-source tools and code repositories that you can use, modify, and contribute to. Perfect for developers and researchers who want programmatic access or customizable solutions.
 
